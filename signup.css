@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+  
+
+.column1 {
+    background-color:#1b252f;
+    width: 40%;
+    height: auto;
+    padding-top: 292px;
+    padding-left: 51px;
+}
+
+.column2 {
+    background-color: #36414c;
+    width: 60%;
+    height: auto;
+    padding-top:24px;
+    border-left: #66737f solid 2px;
+    
+}
+.row {
+    display: flex;
+    height: 100vh;
+}
+
+
+.logo{
+    width: 300px;
+
+}
+.login, .welcome{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    color: #fff;
+}
+
+.login,.capt,.welcome{
+    margin-left: 40px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password],
+input[type=email] {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-top: 14px;
+    outline: 0;
+  }
+
+
+
+  input[type=checkbox],.psw{
+    margin-top: 14px;
+  }
+  .psw{
+    margin-left: 14px;
+  }
+
+  .txtlst{
+    display: inline-grid;
+    margin-right: 41px;
+    width: 44%;
+    padding-bottom: 16px;
+  }
+
+  .forgot{
+    text-decoration: none;
+    color: #eef2f6;
+  }
+
+  .btn{
+    margin-left: 37px;
+
+  }
+
+.signup {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 11px 56px 11px 56px;
+    border-radius: 50px;
+    color: #eef2f6;
+    border: #1b252f solid 1px;
+    background-color: #1b252f;
+    cursor: pointer;
+}
+.cancel{
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  color: #eef2f6;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  margin-right: 47px;
+}
+
+.noaccount,.capt{
+    font-weight: 100;
+}
+
+
+

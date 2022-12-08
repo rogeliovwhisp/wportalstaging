@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: #eef2f6;
+}
+
+.topbar {
+background-color: #fff;
+padding-top: 15px;
+padding-bottom: 15px;
+width: 100%;
+text-align: right;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.currentdate {
+    font-family: 'Outfit', sans-serif;
+    color: #1b252f;
+    margin-right: 14px;
+    border-left: #1b252f solid 2px;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100%;
+    background-color: #1b252f;
+    position:fixed;
+    overflow-x: hidden;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.logo-content {
+    width: 184px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.navlst{
+    padding: 0;
+}
+
+.navitem a {
+    font-weight: 100;
+    padding: 11px 8px 11px 34px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #eef2f6;
+    display: block;
+}
+
+.navitem a:hover{
+    background-color: #36414c;
+    width: 70%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navitem {
+    list-style: none;
+}
+
+.navitem img {
+    width: 16px;
+}
