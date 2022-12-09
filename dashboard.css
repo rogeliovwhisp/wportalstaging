@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: #eef2f6;
+}
+
+.topbar {
+background-color: #fff;
+padding-top: 15px;
+padding-bottom: 15px;
+width: 100%;
+text-align: right;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.currentdate {
+    font-family: 'Outfit', sans-serif;
+    color: #1b252f;
+    margin-right: 14px;
+    border-left: #1b252f solid 2px;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100%;
+    background-color: #1b252f;
+    position:fixed;
+    overflow-x: hidden;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.logo-content {
+    width: 184px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.navlst{
+    padding: 0;
+}
+
+.navitem a {
+    font-weight: 100;
+    padding: 11px 46px 11px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #eef2f6;
+    display: block;
+}
+
+.navitem a:hover{
+    background-color: #36414c;
+    width: 70%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navitem {
+    list-style: none;
+}
+
+.navitem img {
+    width: 16px;
+}
+
+/*Dropdown */
+.btn, .dropbtn {
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    background-color: #1b252f;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+.btn small{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.dropbtn img{
+    width: 17px;
+}
+  
+.btn:hover, .dropbtn:hover, .btn:focus.dropbtn:focus {
+    background-color: #2c3640;
+  }
+  
+  .dropdown {
+    position: relative;
+   display: inline-block; 
+  }
+  
+  .dropdown-content {
+    display: none;
+    margin-top: -163px;
+    position: absolute;
+    background-color: #2c3640;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #eef2f6;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #2c3640;}
+  
+  .show {display: block;}
+/*End*/

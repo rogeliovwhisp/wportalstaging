@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="Loginsystem.css">
+    <title>Sign Up to Whisp | Portal</title>
+</head>
+<body>
+    <div class="row signup_main_wrap">
+        <div class="column1">
+            <div class='signup_left_wrap'>
+                <a href="whisp.io"><img class="logo" src="images/Group 18@3x.png" ></a>
+            </div>
+        </div>
+        <div class="column2">
+            <div class='signup_right_wrap'>
+                <h2 class="welcome">Welcome to Whisp</h2>
+                <p class="capt">Let's get you setup</p>
+
+                <h2 class="welcome">Sign Up</h2>
+                <form>
+                    <ul>
+                        <li class="textboxitem">
+                            <label>Full Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+                        </li>
+                        <li class="textboxitem">
+                            <label></label>
+                            <input type="text" id="lastname" name="lastname"  placeholder="Lastname" required>                         
+                        </li>
+                        <li class="textboxitem">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email"  placeholder="your email here" required>                         
+                        </li>
+                        
+                        <li class="textboxitem"></li>
+                        <li class="textboxitem">
+                            <label>Password</label>
+                            <input type="password" id="password" name="password"  placeholder="Password" required>                         
+                        </li>
+                        <li class="textboxitem">
+                            <label>Confirm Password</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword"  placeholder="Confirm Password" required>                         
+                        </li>
+                        <div class="btn">
+                            <button class="cancel" type="submit" onclick="window.location.href='login.html';">Cancel</button>
+                            <button class="signin" type="submit">Sign up</button>
+                        </div>
+                        
+                    </ul>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
