@@ -134,4 +134,8 @@
   column-gap: 12px;
 }
 
-  /*End*/
+.btn_container{
+  text-align: right;
+    margin-left: 342px;
+} 
+/*End*/
