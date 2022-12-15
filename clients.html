@@ -86,63 +86,169 @@
                            </div>
 
                            <div class="row py-4 px-4 " style="background: #eef2f6">
+                              <table class="table table-borderless">
+                                <thead style='border-bottom: solid 10px #eef2f6;'>
+                                  <tr class="text-center border-bottom">
+                                    <th scope="col" style="background: #ffffff;">
+                                        <div class="form-check py-1">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                            Select all
+                                          </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col">Client Name</th>
+                                    <th scope="col">Leads</th>
+                                    <th scope="col">Floating Button</th>
+                                    <th scope="col">Whisp Wheel</th>
+                                    <th scope="col">Whisp QR Code</th>
+                                    <th scope="col"><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">+ New Client</button></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="text-center mx-3 rounded-pill" style="background: #ffffff; border-bottom: solid 10px #eef2f6;">
+                                    <td scope="row">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          <label class="form-check-label font-weight-bolder" for="flexCheckDefault">
+                                            <b>AP</b>
+                                          </label>
+                                        </div>
+                                    </td>
+                                    <td>Canna Taxi</td>
+                                    <td>20</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>13</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr class="text-center mx-3 rounded-pill" style="background: #ffffff; border-bottom: solid 10px #eef2f6;">
+                                    <td scope="row">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                          <label class="form-check-label font-weight-bolder" for="flexCheckDefault">
+                                            <b>AP</b>
+                                          </label>
+                                        </div>
+                                    </td>
+                                    <td>Canna Taxi</td>
+                                    <td>20</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>13</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  
+                                 </tbody>
+                              </table>
 
 
-<table class="table table-borderless">
-  <thead style='border-bottom: solid 10px #eef2f6;'>
-    <tr class="text-center border-bottom">
-      <th scope="col" style="background: #ffffff;">
-          <div class="form-check py-1">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Select all
-            </label>
-          </div>
-      </th>
-      <th scope="col">Client Name</th>
-      <th scope="col">Leads</th>
-      <th scope="col">Floating Button</th>
-      <th scope="col">Whisp Wheel</th>
-      <th scope="col">Whisp QR Code</th>
-      <th scope="col"><button type="button" class="btn btn-dark">+ New Client</button></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="text-center mx-3 rounded-pill" style="background: #ffffff; border-bottom: solid 10px #eef2f6;">
-      <td scope="row">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label font-weight-bolder" for="flexCheckDefault">
-              <b>AP</b>
-            </label>
-          </div>
-      </td>
-      <td>Canna Taxi</td>
-      <td>20</td>
-      <td>2</td>
-      <td>1</td>
-      <td>13</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr class="text-center mx-3 rounded-pill" style="background: #ffffff; border-bottom: solid 10px #eef2f6;">
-      <td scope="row">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label font-weight-bolder" for="flexCheckDefault">
-              <b>AP</b>
-            </label>
-          </div>
-      </td>
-      <td>Canna Taxi</td>
-      <td>20</td>
-      <td>2</td>
-      <td>1</td>
-      <td>13</td>
-      <td>&nbsp;</td>
-    </tr>
-    
-   </tbody>
-</table>
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New Client</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Client Name</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Client Name" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Password</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="password" class="form-control" placeholder="Enter Password" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Contact Name</label>                                        
+                                        </div>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" placeholder="First Name" >
+                                        </div>
+                                        <div class="col-md-5">
+                                          <input type="text" class="form-control" placeholder="Last Name" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Email Address</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="email" class="form-control" placeholder="Email" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Contact Number</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Contact Number" >
+                                        </div>
+                                      </div>
+                                       <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Address Line</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Address Line 1" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">&nbsp;</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Address Line 2" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Zip Code</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Your Zip" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Website</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Company Websitte" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Timezone</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                      <button type="button" class="btn btn-dark">Save</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal -->
 
                            </div>
                         </div>
