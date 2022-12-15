@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dashboard | Portal</title>
+    <title>Create Whisp | Portal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
@@ -58,14 +58,14 @@
 
             <!--Right Column-->
             <div class="col-sm-10 h-100">
-                <div class="row h-100" style="background:#EEF2F6">
+                <div class="row h-100" style="background:#ffffff">
                     <div class="col-sm-12">
                         <div class="h-100 d-grid align-items-left justify-content-left">
                             <div class=''>
                                 <div class=''>
-                                    <div class="row" style="background: #FFFFFF;">
+                                    <div class="row">
                                         <div class="col-sm-6 py-3 px-4">
-                                            <h3 style="font-family:'Outfit', sans-serif;">Dashboard</h3>
+                                            <h3 style="font-family:'Outfit', sans-serif;">Create a Whisp</h3>
                                         </div>
                                         <div class="col-sm-3 py-3 px-4">
                                             <div class="input-group mb-3">
@@ -76,7 +76,37 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-3 py-4">
-                                            <p class="h6 text-muted">| &nbsp;&nbsp;&nbsp;Monday, November 21, 2022</p>
+                                            <p id="todayis" class="h6 text-muted"> | &nbsp;&nbsp;&nbsp;</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row py-4 px-4" style="background: #eef2f6">
+                                        <div class="row text-left">
+                                            <div class="col-sm-12">
+                                                <div class="card" style="border-radius: 15px;">
+                                                    <div class="card-body">
+                                                        <div class="col-sm-6">
+                                                            <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">Select whisp</h5>
+                                                            <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Start capturing your leads through any whisp below</p>
+                                                        </div>
+                                                        
+                                                        <div class="col-sm-4 py-4">
+                                                            <div class="h-100 d-grid align-items-left justify-content-left">
+                                                                <div class="row mt-3 text-left px-2">
+                                                                    <div class="card" style="border-radius: 15px;">
+                                                                        <div class="card-body">
+                                                                            <div class="col-sm-2">
+                                                                                
+                                                                                <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639b3ab03fdb7e347bdef391.png" width="40px">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -87,5 +117,11 @@
             </div>
         </div>
     </div>
+    <script>
+        const nowtoday = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    
+        document.getElementById("todayis").innerHTML = nowtoday.toLocaleDateString(undefined, options);
+    </script>
 </body>
 </html>
