@@ -85,66 +85,81 @@
                               </div>
                            </div>
 
-                           <div class="row py-4 px-4 " style="background: #eef2f6">
-                              <table class="table table-borderless">
-                                <thead style='border-bottom: solid 10px #eef2f6'>
-                                  <tr class="text-center border-bottom">
-                                    <th scope="col" style="background: #ffffff; border-radius: 10px;">
-                                        <div class="form-check py-1">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                          <label class="form-check-label" for="flexCheckDefault">
-                                            Select all
-                                          </label>
-                                        </div>
-                                    </th>
-                                    <th scope="col">Client Name</th>
-                                    <th scope="col">Leads</th>
-                                    <th scope="col">Floating Button</th>
-                                    <th scope="col">Whisp Wheel</th>
-                                    <th scope="col">Whisp QR Code</th>
-                                    <th scope="col"><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">+ New Client</button></th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr class="text-center mx-3 rounded-pill" style="background: #ffffff; border-bottom: solid 10px #eef2f6; border-radius: 10px !important;">
-                                    <td scope="row">
+                           <div class="row py-4 px-4" style="background: #eef2f6">
+                              <div class="row">
+                                    <div class="justify-content-end d-flex">
+                                      <button type="button" class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#clientsModal">INVITE USER</button>
+                                  </div>
+                              </div>
+                              <div class="row text-center">
+                                  <div class="col-sm-2">
+                                    <div class="card" style="border-radius: 15px;">
+                                      <div class="card-body">
                                         <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                          <label class="form-check-label font-weight-bolder" for="flexCheckDefault">
-                                            <b>CT</b>
-                                          </label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                             Select All
+                                            </label>
                                         </div>
-                                    </td>
-                                    <td>Canna Taxi</td>
-                                    <td>20</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>13</td>
-                                    <td>&nbsp;</td>
-                                  </tr>
-                                  <tr class="text-center mx-3 rounded-pill" style="background: #ffffff; border-bottom: solid 10px #eef2f6;">
-                                    <td scope="row">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2 pt-3 text-secondary">
+                                      Client Name
+                                  </div>
+                                  <div class="col-sm-2 pt-3 text-secondary">
+                                      Leads
+                                  </div>
+                                  <div class="col-sm-2 pt-3 text-secondary">
+                                      Floating Button
+                                  </div>
+                                  <div class="col-sm-2 pt-3 text-secondary">
+                                      Whisp Wheel
+                                  </div>
+                                  <div class="col-sm-2 pt-3 text-secondary">
+                                      Whisp QR Code
+                                  </div>
+                            
+                              </div>
+                              <div class="row mt-3">
+                                  <div class="col-sm-12 mb-3">
+                                    <div class="card" style="border-radius: 15px;">
+                                      <div class="card-body">
                                         <div class="form-check">
-                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                          <label class="form-check-label font-weight-bolder" for="flexCheckDefault">
-                                            <b>CT</b>
-                                          </label>
+                                            <div class="row  text-center">
+                                                <div class="col-sm-2">
+                                                      <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault01"> 
+                                                      <img width='50' src='https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2021/08/blank-profile-picture-png-400x400.png' />
+                                                </div>
+                                                <div class="col-sm-2">
+                                                      <strong class="text-secondary">John Doe</strong>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                     20
+                                                </div>
+                                                <div class="col-sm-2">
+                                                      2
+                                                </div>
+                                                <div class="col-sm-2">
+                                                      1
+                                                </div>
+                                                <div class="col-sm-2">
+                                                      13
+                                                </div>
+                                            </div>
+                                   
                                         </div>
-                                    </td>
-                                    <td>Canna Taxi</td>
-                                    <td>20</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>13</td>
-                                    <td>&nbsp;</td>
-                                  </tr>
-                                  
-                                 </tbody>
-                              </table>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                             
+
+                              </div>
 
 
                               <!-- Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal fade" id="clientsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
