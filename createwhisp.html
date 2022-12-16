@@ -95,7 +95,7 @@
                                                             <div class="col-sm-6">
                                                             <div class="h-100 d-grid align-items-left justify-content-left">
                                                                 <div class="row mt-3 text-left px-2">
-                                                                    <div class="card rounded">
+                                                                    <div class="card rounded floater_btn hover01">
                                                                         <div class="card-body">
                                                                             <div class="row">
                                                                                 <div class="col-sm-2">
@@ -106,18 +106,18 @@
                                                                                     <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for web pages, social Media sites</p>                                                                      
                                                                                 </div>
                                                                                 <div class="col-sm-3 pt-4">
-                                                                                    <button type="button" class="btn btn-dark rounded-pill px-2">Create Whisp</button>
+                                                                                    <button type="button" class="btn btn-dark rounded-pill px-3">Create Whisp</button>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>   
                                                                 </div>
                                                                 <div class="row mt-3 text-left px-2">
-                                                                    <div class="card rounded">
+                                                                    <div class="card rounded wheel_btn hover01">
                                                                         <div class="card-body">
                                                                             <div class="row">
                                                                                 <div class="col-sm-2">
-                                                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639bd0ecf5994d54dbc68972.jpeg" width="70">
+                                                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639d030f0608d61d054c5a25.png" width="70">
                                                                                 </div>
                                                                                 <div class="col-sm-7 pt-3">
                                                                                     <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">Wheel</h5>
@@ -131,11 +131,11 @@
                                                                     </div>   
                                                                 </div>
                                                                 <div class="row mt-3 text-left px-2">
-                                                                    <div class="card rounded">
+                                                                    <div class="card rounded qrcode_btn hover01">
                                                                         <div class="card-body">
                                                                             <div class="row">
                                                                                 <div class="col-sm-2">
-                                                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639bd0ecf5994dc520c68973.jpeg" width="70">
+                                                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639d026a29eb42a697058a30.png" width="70">
                                                                                 </div>
                                                                                 <div class="col-sm-7 pt-3">
                                                                                     <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">QR Code</h5>
@@ -278,12 +278,37 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
+
+        //date
         const nowtoday = new Date();
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    
         document.getElementById("todayis").innerHTML = nowtoday.toLocaleDateString(undefined, options);
+        
+        //qr floater wheel hide
+        $(document).ready(function(){
+          $("#qrCode_wrap, #wheel_wrap").hide();
+
+          $(".qrcode_btn").hover(function(){
+            $("#floater_wrap, #wheel_wrap").hide();
+            $("#qrCode_wrap").show();
+          });
+          $(".wheel_btn").hover(function(){
+            $("#floater_wrap, #qrCode_wrap").hide();
+            $("#wheel_wrap").show();
+          });
+          $(".floater_btn").hover(function(){
+            $("#qrCode_wrap, #wheel_wrap").hide();
+            $("#floater_wrap").show();
+          });
+          $(".hover01").hover(function(){
+            $(this).css("background-color", "whitesmoke");
+            $(this).css("cursor", "pointer");
+            }, function(){
+            $(this).css("background-color", "transparent");
+          });
+        });
     </script>
 </body>
 </html>
