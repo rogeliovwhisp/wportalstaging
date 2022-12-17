@@ -81,18 +81,33 @@
                                             <p id="todayis" class="h6 text-muted">| &nbsp;&nbsp;&nbsp;</p>
                                         </div>
                                     </div>
+
                                     <!--start menu selector-->
                                     <div class="row text-center py-3 px-4">
                                       <div class="h-100 d-inline-flex">
                                         <div class="col-sm-7">
-                                            <nav class="nav nav-pills flex-column flex-sm-row">
-                                                <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#" style="background-color: #FFFFFF !important; color: #1b252f;"><i class="bi bi-info-circle"></i> &nbsp; Info</a>
-                                                <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="bi bi-chat"></i> &nbsp; SMS</a>
-                                                <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="bi bi-palette"></i> &nbsp; Style</a>
-                                                <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="bi bi-bookmark"></i>&nbsp; Track</a>
-                                                <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="bi bi-share"></i>&nbsp; integrate</a>
-                                                <a class="flex-sm-fill text-sm-center nav-link" href="#"><i class="bi bi-code-slash"></i>&nbsp; Code</a>
-                                            </nav>
+
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-info-circle"></i> &nbsp; Info</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false"><i class="bi bi-chat"></i> &nbsp; SMS</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false"><i class="bi bi-palette"></i> &nbsp; Style</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false"><i class="bi bi-bookmark"></i>&nbsp; Track</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false"><i class="bi bi-share"></i>&nbsp; integrate</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><i class="bi bi-code-slash"></i>&nbsp; Code</button>
+                                              </li>
+                                            </ul>
+
                                         </div>
                                         <div class="col-sm-5">
                                             <div class="d-grid gap-4 d-md-flex justify-content-md-end">
@@ -104,67 +119,219 @@
                                     </div>
                                     <!--End menu Selector-->
                                     <!--Start body content tab-->
-                                    <div class="d-flex">
-                                        <div class="col-sm-8 px-4">
-                                            <div class="card" style="border-radius: 15px;">
-                                                <div class="card-body">
-                                                    <form class="row g-3 needs-validation" novalidate>
-                                                        <div class="col-md-6 py-3">
-                                                          <label for="validationCustom01" class="form-label">Floater Label</label>
-                                                          <input type="text" class="form-control" id="validationCustom01"  required>
-                                                          <div class="valid-feedback">
-                                                            Looks good!
-                                                          </div>
-                                                        </div>
-                                                        <div class="col-md-6 py-3">
-                                                          <label for="validationCustom02" class="form-label">Available Platforms</label>
-                                                          <input type="text" class="form-control" id="validationCustom02"  required>
-                                                          <div class="valid-feedback">
-                                                            Looks good!
-                                                          </div>
-                                                        </div>
-                                                        <div class="col-md-6 py-5">
-                                                            <label for="validationCustom02" class="form-label">Floater type</label>
-                                                            <input type="text" class="form-control" id="validationCustom02"  required>
-                                                            <div class="valid-feedback">
-                                                              Looks good!
+                                    <div class="">
+                                        <div class="row px-4">                                            
+                                            <div class="tab-content" id="pills-tabContent">
+
+                                                <!--info tab-->
+                                                <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <form class="row g-3 needs-validation" novalidate>
+                                                                        <div class="col-md-6 py-3">
+                                                                          <label for="validationCustom01" class="form-label">Floater Label</label>
+                                                                          <input type="text" class="form-control" id="validationCustom01"  required>
+                                                                          <div class="valid-feedback">
+                                                                            Looks good!
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 py-3">
+                                                                          <label for="validationCustom02" class="form-label">Available Platforms</label>
+                                                                          <input type="text" class="form-control" id="validationCustom02"  required>
+                                                                          <div class="valid-feedback">
+                                                                            Looks good!
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 py-5">
+                                                                            <label for="validationCustom02" class="form-label">Floater type</label>
+                                                                            <input type="text" class="form-control" id="validationCustom02"  required>
+                                                                            <div class="valid-feedback">
+                                                                              Looks good!
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 py-5">
+                                                                            <label for="validationCustom02" class="form-label">Input Box Message</label>
+                                                                            <input type="text" class="form-control" id="validationCustom02"  required>
+                                                                            <div class="valid-feedback">
+                                                                              Looks good!
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12 ">
+                                                                          <div class="form-check form-switch">
+                                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                                <label class="form-check-label" for="flexSwitchCheckDefault">Hide floater on Page</label>
+                                                                          </div>
+                                                                          <h5 class="card-title py-3" style="font-family: 'Outfit', sans-serif;">Terms and Conditions</h5>
+                                                                          <div class="form-check form-switch py-1">
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">Show Terms and conditions <br> before whisp</label>
+                                                                          </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6 py-5">
-                                                            <label for="validationCustom02" class="form-label">Input Box Message</label>
-                                                            <input type="text" class="form-control" id="validationCustom02"  required>
-                                                            <div class="valid-feedback">
-                                                              Looks good!
+                                                        <div class="col-sm-5">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                        <img class="card-img-top" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639cbc33317e290af6f64442.png" width="200">
+                                                                        <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">Floater</h5>
+                                                                        <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for web pages, Social Media sites</p>
+                                                            
+                                                                    </div>  
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-12 ">
-                                                          <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                                <label class="form-check-label" for="flexSwitchCheckDefault">Hide floater on Page</label>
-                                                          </div>
-                                                          <h5 class="card-title py-3" style="font-family: 'Outfit', sans-serif;">Terms and Conditions</h5>
-                                                          <div class="form-check form-switch py-1">
-                                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                            <label class="form-check-label" for="flexSwitchCheckDefault">Show Terms and conditions <br> before whisp</label>
-                                                      </div>
-                                                        </div>
-                                                      </form>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <!-- end info -->
+
+                                                <!-- SMS -->
+                                                <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <form class="row g-3 needs-validation" novalidate>
+                                                                        <div class="pt-5 text-center center-block mb-5">
+                                                                        sms
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                      sms right                                                            
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end sms -->
+
+
+                                                <!-- style -->
+                                                <div class="tab-pane fade" id="pills-style" role="tabpanel" aria-labelledby="pills-style-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <form class="row g-3 needs-validation" novalidate>
+                                                                        <div class="pt-5 text-center center-block mb-5">
+                                                                            style                                                          
+                                                                        </div>  
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                      style right                                                         
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end style -->
+
+                                                <!-- track -->
+                                                <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <form class="row g-3 needs-validation" novalidate>
+                                                                        <div class="pt-5 text-center center-block mb-5">
+                                                                            track                                                          
+                                                                        </div>  
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                      track right                                                         
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end track -->
+
+                                                <!-- integrate -->
+                                                <div class="tab-pane fade" id="pills-integrate" role="tabpanel" aria-labelledby="pills-integrate-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <form class="row g-3 needs-validation" novalidate>
+                                                                        <div class="pt-5 text-center center-block mb-5">
+                                                                            integrate                                                          
+                                                                        </div>  
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                      integrate right                                                         
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end integrate -->
+
+                                                <!-- code -->
+                                                <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <form class="row g-3 needs-validation" novalidate>
+                                                                        <div class="pt-5 text-center center-block mb-5">
+                                                                            code                                                          
+                                                                        </div>  
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                          <div class="card" style="border-radius: 15px;">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                      code right                                                         
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  end code -->
+
+                                                </div>
+
                                         </div>
-                                        <div class="col-sm-4 px-2">
-                                            <div class="card" style="border-radius: 15px;">
-                                                <div class="card-body">
-                                                    <div class="col-md-7 pt-5 text-center mb-5">
-                                                        <img class="card-img-top" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639cbc33317e290af6f64442.png" width="200">
-                                                        <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">Floater</h5>
-                                                        <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for web pages, Social Media sites</p>
-                                            
-                                                    </div>  
-                                                </div>
-                                            </div>
-                                          </div>  
                                     </div>
+                                </div>
+
+                            </div>
                                      
                             
                                     <!--End-->
