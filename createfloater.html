@@ -88,7 +88,7 @@
                                         <div class="col-sm-7">
                                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-info-circle"></i> &nbsp; Info</button>
+                                                <button class="nav-link active text-condary" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-info-circle"></i> &nbsp; Info</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
                                                 <button class="nav-link" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-chat"></i> &nbsp; SMS</button>
@@ -125,7 +125,7 @@
                                                 <!--info tab-->
                                                 <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-7">
+                                                        <div class="col-sm-8">
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body px-5 py-5">
                                                                     <form class="row g-3 needs-validation" novalidate>
@@ -172,7 +172,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-5">
+                                                        <div class="col-sm-4">
                                                           <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -191,43 +191,52 @@
                                                 <!-- SMS -->
                                                 <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-7">
-                                                          <div class="d-inline-flex py-3 p-2" style="background: #FFFFFF; border-radius: 15px; width: 100%;">
-                                                            <div class="card" style="border-radius: 15px; width: 87%;">
-                                                                <div class="card-body">
-                                                                    <form class="row g-3 needs-validation" novalidate>
-                                                                        <div class="pt-5 text-left left-block mb-5">
-                                                                            <i class="bi bi-person-circle" style="font-family: 'Outfit', sans-serif;">&nbsp; Jane Doe</i>
-                                                                            <div class="floating py-1">
-                                                                                <textarea class="form-control" placeholder="SMS message text" id="floatingTextarea2" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea>
+                                                        <div class="col-sm-8">
+                                                          <div class=" py-3 p-2" style="background: #FFFFFF; border-radius: 15px;">
+                                                            <div class="row py-3 px-4">
+                                                                <div class="col-sm-7">
+                                                                    <div class="card" style="border-radius: 15px; ">
+                                                                        <div class="card-body">
+                                                                            <form class="row g-3 needs-validation" novalidate>
+                                                                                <div class="pt-5 text-left left-block mb-5">
+                                                                                    <span class="bi bi-person-circle" style="font-family: 'Outfit', sans-serif;">&nbsp; Jane Doe</span>
+                                                                                    <div class="floating py-1">
+                                                                                        <textarea class="form-control" placeholder="SMS message text" id="floatingTextarea2" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea>
 
-                                                                                <img class="float-end py-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a07dfe4100713531b16932.png">                                                                                
-                                                                                <textarea class="form-control" placeholder="SMS message reply" id="floatingTextarea" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea>
+                                                                                        <img class="float-end py-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a07dfe4100713531b16932.png">                                                                                
+                                                                                        <textarea class="form-control" placeholder="SMS message reply" id="floatingTextarea" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea>
 
-                                                                                <img class="float-end py-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a07dfe4100713531b16932.png"> 
-                                                                                <textarea class="form-control" placeholder="SMS message reply" id="floatingTextarea2" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea> 
-                                                                            </div>
+                                                                                        <img class="float-end py-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a07dfe4100713531b16932.png"> 
+                                                                                        <textarea class="form-control" placeholder="SMS message reply" id="floatingTextarea2" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
                                                                         </div>
-                                                                    </form>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="form-check form-switch ml-3 text-center center-block mb-5 py-4">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                                <label class="form-check-label" for="flexSwitchCheckDefault" style="font-family: 'Outfit', sans-serif; font-size: 12px;">Enable Data Validation</label>
+                                                                <div class="col-sm-5">
+                                                                    <div class="form-check form-switch text-center center-block mb-5" style='padding-left: 0px !important'>
+                                                                        <input class="form-check-input mx-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" >
+                                                                        <label class="form-check-label h6" for="flexSwitchCheckDefault" style="font-family: 'Outfit', sans-serif">Enable Data Validation</label>
 
-                                                                <div class="uploadfile pt-5 text-center center-block mb-5 px-4 py-4" style="border:#ADB9C7 dashed 2px; border-radius: 15px;">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
-                                                                        <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                                                                        <path d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z"/>
-                                                                    </svg>
-                                                                    <p style="color: #ADB9C7;font-family:'Outfit',sans-serif;font-size: 11px;">Upload a picture <br> PNG, JPG</p>
-                                                                    <button type="submit" class="btn btn-outline-secondary mt-3 rounded-5">Browse</button>
+                                                                        <div class="uploadfile pt-5 text-center center-block mb-5 px-4 py-4" style="border:#ADB9C7 dashed 2px; border-radius: 15px;">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
+                                                                                <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                                                <path d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z"/>
+                                                                            </svg>
+                                                                            <p style="color: #ADB9C7;font-family:'Outfit',sans-serif;font-size: 11px;">Upload a picture <br> PNG, JPG</p>
+                                                                            <button type="submit" class="btn btn-outline-secondary mt-3 rounded-5">Browse</button>
+                                                                        </div>
+                                                                    </div>                                                                    
                                                                 </div>
-                                                           </div>
+                                                                
+                                                            </div>
+                                                            
+                                                           
                                                           </div>
                                                             
                                                         </div>
-                                                        <div class="col-sm-5">
+                                                        <div class="col-sm-4">
                                                           <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -246,18 +255,68 @@
                                                 <!-- style -->
                                                 <div class="tab-pane fade" id="pills-style" role="tabpanel" aria-labelledby="pills-style-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-7">
+                                                        <div class="col-sm-8">
+                                                            <form>
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
-                                                                        <div class="pt-5 text-center center-block mb-5">
-                                                                            style                                                          
+                                                                        <div class="pt-5 text-left center-block mb-5">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4">
+                                                                                    <div class="form-group">
+                                                                                        <p>Background Image URL</p>
+                                                                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="http://">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                      <p>Page Placement</p>
+                                                                                      <div class="form-group">
+                                                                                        <select class="form-control" id="exampleFormControlSelect2">
+                                                                                          <option>---Select---</option>
+                                                                                          <option>1</option>
+                                                                                          <option>2</option>
+                                                                                          <option>3</option>
+                                                                                          <option>4</option>
+                                                                                        </select>
+                                                                                      </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                    <p>Font Size</p>
+                                                                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0px">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row pt-5">
+                                                                                <div class="col-sm-3">
+                                                                                    <p>
+                                                                                        <label for="exampleColorInput" class="form-label">Banner<br/>Background Color</label>
+                                                                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <p>
+                                                                                        <label for="exampleColorInput" class="form-label">Banner<br/>Font Color</label>
+                                                                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <p class='pt-4'>
+                                                                                        <label for="exampleColorInput" class="form-label">Background Color</label>
+                                                                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <p class='pt-4'>
+                                                                                        <label for="exampleColorInput" class="form-label">Font Color</label>
+                                                                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>                                                         
                                                                         </div>  
                                                                     </form>
                                                                 </div>
-                                                            </div>
+                                                            </div></form>
                                                         </div>
-                                                        <div class="col-sm-5">
+                                                        <div class="col-sm-4">
                                                           <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -275,7 +334,7 @@
                                                 <!-- track -->
                                                 <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-7">
+                                                        <div class="col-sm-8">
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
@@ -286,7 +345,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-5">
+                                                        <div class="col-sm-4">
                                                           <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -304,7 +363,7 @@
                                                 <!-- integrate -->
                                                 <div class="tab-pane fade" id="pills-integrate" role="tabpanel" aria-labelledby="pills-integrate-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-7">
+                                                        <div class="col-sm-8">
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
@@ -315,7 +374,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-5">
+                                                        <div class="col-sm-4">
                                                           <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -333,7 +392,7 @@
                                                 <!-- code -->
                                                 <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-7">
+                                                        <div class="col-sm-8">
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
@@ -344,7 +403,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-5">
+                                                        <div class="col-sm-4">
                                                           <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
