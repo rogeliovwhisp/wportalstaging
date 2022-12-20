@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
@@ -71,9 +73,9 @@
                                             <div class="input-group mb-3">
                                                 <select class="form-select" aria-label="Default select example">
                                                     <option selected>Select Client</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                                    <option value="1">Client One</option>
+                                                    <option value="2">Client Two</option>
+                                                    <option value="3">Client Three</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -88,22 +90,22 @@
                                         <div class="col-sm-7">
                                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link active text-condary" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-info-circle"></i> &nbsp; Info</button>
+                                                <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-info-circle"></i> &nbsp; Info</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-chat"></i> &nbsp; SMS</button>
+                                                <button class="nav-link text-info" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-chat"></i> &nbsp; SMS</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-palette"></i> &nbsp; Style</button>
+                                                <button class="nav-link text-info" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-palette"></i> &nbsp; Style</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-bookmark"></i>&nbsp; Track</button>
+                                                <button class="nav-link text-info" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-bookmark"></i>&nbsp; Track</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-share"></i>&nbsp; integrate</button>
+                                                <button class="nav-link text-info" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-share"></i>&nbsp; integrate</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-code-slash"></i>&nbsp; Code</button>
+                                                <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-code-slash"></i>&nbsp; Code</button>
                                               </li>
                                             </ul>
 
@@ -338,8 +340,35 @@
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
-                                                                        <div class="pt-5 text-center center-block mb-5">
-                                                                            track                                                          
+                                                                        <div class="px-3  py-3 text-left center-block mb-5">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-8">
+                                                                                    <p>Tracking Parameters</p>
+                                                                                    <p>Enter parameters that map to your tracking variables</p>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                    
+                                                                                    <button type="button" class="btn btn-outline-secondary">Add </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-4">
+                                                                                  <div class="form-group">
+                                                                                    <label for="exampleInputEmail1">Parameter</label>
+                                                                                    <input type="text" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter parameter name">
+                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                    <div class="form-group">
+                                                                                        <label for="exampleInputEmail1">Value</label>
+                                                                                        <input type="text" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Receiving value">
+                                                                                      </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4">
+                                                                                    <label for="exampleInputEmail1">Remove</label><br />
+                                                                                    <button class="btn btn-outline-secondary mt-3"><i class="fa fa-trash"></i></button>
+                                                                                </div>
+                                                                            </div>                                                        
                                                                         </div>  
                                                                     </form>
                                                                 </div>
@@ -367,8 +396,8 @@
                                                             <div class="card" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
-                                                                        <div class="pt-5 text-center center-block mb-5">
-                                                                            integrate                                                          
+                                                                        <div class="px-4 py-4 center-block mb-5">
+                                                                            <p class="text-secondary h6">Select Integration</p>                                                          
                                                                         </div>  
                                                                     </form>
                                                                 </div>
@@ -423,10 +452,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                                      
-                            
                                     <!--End-->
                                 </div>
                             </div>
