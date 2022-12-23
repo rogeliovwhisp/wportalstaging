@@ -1,0 +1,66 @@
+/*Left global side bar*/
+    .leftSideBar .leftNavigationWrap {
+      margin:  0px !important;
+      padding:  0px !important;
+    }
+    .leftSideBar .leftNavigation {
+      padding:  0px;
+    }
+    .leftSideBar .leftNavigation li a{
+      color:  #8F9CA9;
+      width: 100%;
+      display:  block;
+      padding:  5px 0px 5px 15%;
+    }
+    .leftSideBar .leftNavigation li a:hover {
+      background-color: #36414C;
+      color:  #ffffff;
+    }
+/*END left global side bar*/
+
+/*Right Top Header*/
+    .rightTopHeader h4 {
+      font-weight: bold;
+        color: #1B252F;
+        font-size:  20px;
+    }
+    .rightTopHeader input[type="text"]{
+      background:  url(https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a52166ad0ddc7478ea0c23.png);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: 10px 50%;
+      padding-left: 45px;
+      color: #b6c1cd;
+    }
+    .rightTopDate {
+      color: #8F9CA9;
+      padding-top:  6px;
+    }
+    .rightTopDate span {
+      padding-right:  15px;
+    }
+/*end Right Top Header*/
+
+/*paginations client page*/
+    #pagination-container ul { list-style-type: none; padding-left: 0em; }
+    #pagination-container ul li { float: left; padding: 3px 10px; border: solid 1px #e7e6e6;}
+    #pagination-container ul .active { background:  black; color:  white;}
+/*END paginations client page*/
+
+/*clients page*/
+.clientsTable tr {
+  background:  #ffffff;
+}
+
+.clientsTable tr {
+    background: url(https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5384f5aac1d0128905203.png);
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+
+.clientsPageBg {
+  background: #eef2f6;
+}
+/*clients page*/

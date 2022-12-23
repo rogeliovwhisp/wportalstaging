@@ -11,14 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+  <link rel="stylesheet" href="styles.css">
+
   <!-- pagination -->  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
-  <style>
-    #pagination-container ul { list-style-type: none; padding-left: 0em; }
-    #pagination-container ul li { float: left; padding: 3px 10px; border: solid 1px #e7e6e6;}
-    #pagination-container ul .active { background:  black; color:  white;}
-  </style>
   <!-- end pagination -->
 
 </head>
@@ -28,22 +24,22 @@
 <div id="mmenu_screen" class="container-fluid d-flex">
     <div class="row flex-fill" style='min-height: 100vh'>
 
-        <!-- left column -->
-        <div class="col-sm-2 h-100">
+        <!-- left global sidebar -->
+        <div class="col-sm-2 h-100 leftSideBar">
             <div class="row h-100" style="background:#1b252f">
                 <div class="col-sm-12">
-                    <div class="h-100  justify-content-middle py-5 py-5">
+                    <div class="h-100  justify-content-middle py-4">
                       <div class="row">
                         <div class="col-sm-12 text-center mb-5">
-                          <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' style='width: 70%'/>
+                          <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' style='width: 160px'/>
                         </div>
 
-                            <div class="col-sm-12">
-                              <ul>
-                                <li class="mb-3"><a href="dashboard.html" class="text-secondary text-decoration-none"><i class="bi bi-grid"></i>&nbsp; Dashboard</a></li>
-                                <li class="mb-3"><a href="clients.html" class="text-secondary text-decoration-none"><i class="bi bi-people"></i>&nbsp; Clients</a></li>
-                                <li class="mb-3"><a href="manageUsers.html" class="text-secondary text-decoration-none"><i class="bi bi-person"></i>&nbsp; Manage Users</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-gear"></i>&nbsp; Settings</a></li>
+                            <div class="row leftNavigationWrap">
+                              <ul class="leftNavigation">
+                                <li class="mb-3"><a href="dashboard.html" class="text-decoration-none"><i class="bi bi-grid"></i>&nbsp; Dashboard</a></li>
+                                <li class="mb-3"><a href="clients.html" class="text-decoration-none"><i class="bi bi-people"></i>&nbsp; Clients</a></li>
+                                <li class="mb-3"><a href="manageUsers.html" class="text-decoration-none"><i class="bi bi-person"></i>&nbsp; Manage Users</a></li>
+                                <li class="mb-2"><a href="#" class="text-decoration-none"><i class="bi bi-gear"></i>&nbsp; Settings</a></li>
                               </ul>
                             </div>
 
@@ -55,23 +51,21 @@
                                     <p class="text-white"><b>John Doe</b><br/>administrator</p>
                                     </a>
                                     <ul class="dropdown-menu text-small shadow">
-                                      <li><a class="dropdown-item" href="#">New project...</a></li>
                                       <li><a class="dropdown-item" href="#">Settings</a></li>
                                       <li><a class="dropdown-item" href="#">Profile</a></li>
                                       <li><hr class="dropdown-divider"></li>
-                                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                      <li><a class="dropdown-item" href="#">Log out</a></li>
                                     </ul>
                                   </div>
                               </div>
                             </div>
-                      </div>
- 
-                      <div>
+
                       </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- end left global side bar -->
 
         <!-- right column -->
         <div class="col-sm-10 h-100">
@@ -80,169 +74,67 @@
                     <div class="h-100 d-grid align-items-left justify-content-left">
                       <div class=''>
                           <div class=''>
-                           <div class="row">
-                              <div class="col-sm-6 py-3 px-4">
-                                  <h3 style="font-family:'Outfit', sans-serif;">Clients</h3>
+
+                           <!-- Right Top Header-->
+                           <div class="row rightTopHeader pt-3 pb-3">
+                              <div class="col-sm-5">
+                                  <h4 class='pt-2 px-4 font-weight-bold' style="font-family:'Outfit', sans-serif;">Clients</h4>
                               </div>
-                              <div class="col-sm-3 py-3 px-4">
-                                  <div class="input-group mb-3">
-                                    <input type="text" class="form-control rounded-pill" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="col-sm-4">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control rounded-pill rightTopSearch" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
                                     <div class="input-group-append d-none">
                                       <button class="btn btn-outline-secondary" type="button">s</button>
                                     </div>
                                   </div>
                               </div>
-                              <div class="col-sm-3 py-4">
-                                  <p class="h6 text-muted">| &nbsp;&nbsp;&nbsp;Monday, November 21, 2022</p>
+                              <div class="col-sm-3 rightTopDate">
+                                  <p><span>|</span> <span class="date">Monday, November 21, 2022</span></p>
                               </div>
                            </div>
+                           <!-- End Right Top Header-->
 
-                           <div class="row py-4 px-4" style="background: #eef2f6">
-                              <div class="row">
-                                    <div class="justify-content-end d-flex">
-                                      <button type="button" class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#clientsModal">INVITE USER</button>
-                                  </div>
-                              </div>
-                              <div class="row text-center">
-                                  <div class="col-sm-2">
-                                    <div class="card" style="border-radius: 15px;">
-                                      <div class="card-body">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                             Select All
-                                            </label>
+                           <div class="row py-4 clientsPageBg">
+                            <div class="list-wrapper">
+                                <div class="list-item1">
+                                   <div class="row mt-3">
+                                        <div class="col-sm-12 mb-3">
+                                          <div class="card" style="border-radius: 15px;">
+                                            <div class="card-body">
+                                              <div class="form-check">
+                                                  <div class="row  text-center">
+                                                      <div class="col-sm-2">
+                                                        <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault01">
+                                                            Select All
+                                                      </div>
+                                                      <div class="col-sm-2 pt-3">
+                                                            <strong class="text-secondary">Client Name</strong>
+                                                      </div>
+                                                      <div class="col-sm-1 pt-3">
+                                                           Leads
+                                                      </div>
+                                                      <div class="col-sm-2 pt-3">
+                                                            Floating Button
+                                                      </div>
+                                                      <div class="col-sm-1 pt-3">
+                                                            Whisp Wheel
+                                                      </div>
+                                                      <div class="col-sm-2 pt-3">
+                                                            Whisp QR Code
+                                                      </div>
+                                                      <div class="col-sm-2 pt-3">
+                                                            <button type="button" class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#clientsModal">+ INVITE USER</button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-2 pt-3 text-secondary">
-                                      Client Name
-                                  </div>
-                                  <div class="col-sm-2 pt-3 text-secondary">
-                                      Leads
-                                  </div>
-                                  <div class="col-sm-2 pt-3 text-secondary">
-                                      Floating Button
-                                  </div>
-                                  <div class="col-sm-2 pt-3 text-secondary">
-                                      Whisp Wheel
-                                  </div>
-                                  <div class="col-sm-2 pt-3 text-secondary">
-                                      Whisp QR Code
-                                  </div>
-                            
-                              </div>
-
-                              <!-- Modal -->
-                              <div class="modal fade" id="clientsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">New Client</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Client Name</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="text" class="form-control" placeholder="Client Name" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Password</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="password" class="form-control" placeholder="Enter Password" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Contact Name</label>                                        
-                                        </div>
-                                        <div class="col-md-4">
-                                          <input type="text" class="form-control" placeholder="First Name" >
-                                        </div>
-                                        <div class="col-md-5">
-                                          <input type="text" class="form-control" placeholder="Last Name" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Email Address</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="email" class="form-control" placeholder="Email" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Contact Number</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="text" class="form-control" placeholder="Contact Number" >
-                                        </div>
-                                      </div>
-                                       <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Address Line</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="text" class="form-control" placeholder="Address Line 1" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">&nbsp;</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="text" class="form-control" placeholder="Address Line 2" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Zip Code</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="text" class="form-control" placeholder="Your Zip" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Website</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <input type="text" class="form-control" placeholder="Company Websitte" >
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-3">
-                                            <label for="usr">Timezone</label>                                        
-                                        </div>
-                                        <div class="col-md-9">
-                                          <select class="form-select" aria-label="Default select example">
-                                            <option selected>Select Timezone</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                                      <button type="button" class="btn btn-dark">Save</button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <!-- End Modal -->
-
-                              <!-- pagination -->
-                              <div class="list-wrapper">
+                              <div class="list-wrapper clientsPageBg">
                                 <div class="list-item">
                                    <div class="row mt-3">
                                         <div class="col-sm-12 mb-3">
@@ -257,17 +149,20 @@
                                                       <div class="col-sm-2 pt-3">
                                                             <strong class="text-secondary">John Doe</strong>
                                                       </div>
-                                                      <div class="col-sm-2 pt-3">
+                                                      <div class="col-sm-1 pt-3">
                                                            20
                                                       </div>
                                                       <div class="col-sm-2 pt-3">
                                                             2
                                                       </div>
-                                                      <div class="col-sm-2 pt-3">
+                                                      <div class="col-sm-1 pt-3">
                                                             1
                                                       </div>
                                                       <div class="col-sm-2 pt-3">
                                                             13
+                                                      </div>
+                                                      <div class="col-sm-2 pt-3">
+                                                            &nbsp;
                                                       </div>
                                                   </div>
                                          
@@ -414,7 +309,112 @@
                                     </div>
                                   </div>
                                  </div>
-
+                              <!-- Modal -->
+                              <div class="modal fade" id="clientsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New Client</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Client Name</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Client Name" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Password</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="password" class="form-control" placeholder="Enter Password" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Contact Name</label>                                        
+                                        </div>
+                                        <div class="col-md-4">
+                                          <input type="text" class="form-control" placeholder="First Name" >
+                                        </div>
+                                        <div class="col-md-5">
+                                          <input type="text" class="form-control" placeholder="Last Name" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Email Address</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="email" class="form-control" placeholder="Email" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Contact Number</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Contact Number" >
+                                        </div>
+                                      </div>
+                                       <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Address Line</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Address Line 1" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">&nbsp;</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Address Line 2" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Zip Code</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Your Zip" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Website</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <input type="text" class="form-control" placeholder="Company Websitte" >
+                                        </div>
+                                      </div>
+                                      <div class="row pb-3">
+                                        <div class="col-md-3">
+                                            <label for="usr">Timezone</label>                                        
+                                        </div>
+                                        <div class="col-md-9">
+                                          <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Timezone</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                      <button type="button" class="btn btn-dark">Save</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End Modal -->
                                 <div id="pagination-container"></div>
                                 <script> 
                                   // jQuery Plugin: http://flaviusmatis.github.io/simplePagination.js/
