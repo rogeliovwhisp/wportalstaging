@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
@@ -28,11 +29,11 @@
                         </div>
 
                             <div class="col-sm-12">
-                              <ul>
-                                <li class="mb-3"><a href="dashboard.html" class="text-secondary text-decoration-none"><i class="bi bi-grid"></i>&nbsp; Dashboard</a></li>
-                                <li class="mb-3"><a href="clients.html" class="text-secondary text-decoration-none"><i class="bi bi-people"></i>&nbsp; Clients</a></li>
-                                <li class="mb-3"><a href="manageUsers.html" class="text-secondary text-decoration-none"><i class="bi bi-person"></i>&nbsp; Manage Users</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-gear"></i>&nbsp; Settings</a></li>
+                              <ul style="padding: 0;">
+                                <li class="MU_leftnav mb-3"><a href="dashboard.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc21c8ea39e8.svg+xml"> &nbsp; Dashboard</a></li>
+                                <li class="MU_leftnav mb-3"><a href="clients.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc1bc7ea39ea.svg+xml"> &nbsp; Clients</a></li>
+                                <li class="MU_leftnav mb-3"><a href="manageUsers.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc4c00ea39e9.svg+xml"> &nbsp; Manage Users</a></li>
+                                <li class="MU_leftnav mb-2"><a href="accountsettings.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b978ad0ddc4e6dea3a08.svg+xml"> &nbsp; Settings</a></li>
                               </ul>
                             </div>
 
@@ -40,7 +41,7 @@
                               <div class="fixed-bottom p-4">
                                 <div class="dropdown">
                                     <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="accountprofile rounded-circle me-2">
                                     <p class="text-white"  style="font-family: 'Outfit', sans-serif;"><b>John Doe</b><br/>administrator</p>
                                     </a>
                                     <ul class="dropdown-menu text-small shadow">
@@ -74,15 +75,15 @@
                                   <h3>Manage Users</h3>
                               </div>
                               <div class="col-sm-3 py-3 px-4">
-                                  <div class="input-group mb-3">
-                                    <input type="text" class="form-control rounded-pill" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2"  style="font-family: 'Outfit', sans-serif;">
-                                    <div class="input-group-append d-none">
-                                      <button class="btn btn-outline-secondary" type="button">s</button>
-                                    </div>
+                                <div class="input-group">
+                                  <input type="text" class="form-control rounded-pill rightTopSearch" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                  <div class="input-group-append d-none">
+                                    <button class="btn btn-outline-secondary" type="button">s</button>
                                   </div>
+                                </div>
                               </div>
                               <div class="col-sm-3 py-4">
-                                  <p class="h6 text-muted"  style="font-family: 'Outfit', sans-serif;">| &nbsp;&nbsp;&nbsp;Monday, November 21, 2022</p>
+                                  <p id="todayis" class="h6 text-muted"  style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
                               </div>
                            </div>
 
@@ -105,7 +106,7 @@
                                       Client Name
                                   </div>
                                   <div class="col-sm-2 pt-3 justify-content-end d-flex">
-                                      <button type="button" class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#modalInviteUser">INVITE USER</button>
+                                      <button type="button" class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#modalInviteUser">Invite User</button>
                                   </div>
                               </div>
                               <div class="row mt-3">
@@ -126,10 +127,10 @@
                                                       <small class="text-muted" style="font-family: 'Outfit', sans-serif;">janedoe@whisp.io</small>
                                                 </div>
                                                 <div class="col-sm-1">
-                                                      <a href="#" class="card-link text-decoration-none text-secondary" data-bs-toggle="modal" data-bs-target="#modalInviteUserEdit"><i class="bi bi-pencil"></i>&nbsp;Edit</a>
+                                                      <a href="#" class="card-link text-decoration-none text-secondary" data-bs-toggle="modal" data-bs-target="#modalInviteUserEdit"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1d106590903d.svg+xml"></a>
                                                 </div>
                                                 <div class="col-sm-1" style="width: 10.333333%;">
-                                                      <a href="#" class="card-link text-decoration-none text-danger"><i class="bi bi-trash"></i>&nbsp;Remove</a>
+                                                      <a href="#" class="card-link text-decoration-none text-danger"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1da1d590903e.svg+xml"></a>
                                                 </div>
                                             </div>
                                    
@@ -154,10 +155,10 @@
                                                       <small class="text-muted"  style="font-family: 'Outfit', sans-serif;">johndoe@whisp.io</small>
                                                 </div>
                                                 <div class="col-sm-1">
-                                                      <a href="#" class="card-link text-decoration-none text-secondary" data-bs-toggle="modal" data-bs-target="#modalInviteUserEdit"><i class="bi bi-pencil"></i>&nbsp;Edit</a>
+                                                      <a href="#" class="card-link text-decoration-none text-secondary" data-bs-toggle="modal" data-bs-target="#modalInviteUserEdit"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1d106590903d.svg+xml"></a>
                                                 </div>
                                                 <div class="col-sm-1" style="width: 10.333333%;">
-                                                      <a href="#" class="card-link text-decoration-none text-danger"><i class="bi bi-trash"></i>&nbsp;Remove</a>
+                                                      <a href="#" class="card-link text-decoration-none text-danger"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1da1d590903e.svg+xml"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,7 +172,7 @@
                               <!-- Modal INVITE -->
                               <div class="modal fade" id="modalInviteUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
-                                  <div class="modal-content">
+                                  <div class="inviteuser modal-content">
                                     <div class="modal-header">
                                       <h5 class="modal-title" id="exampleModalLabel">Send Invite</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -182,7 +183,7 @@
                                             <label for="usr">Email Address</label>                                        
                                         </div>
                                         <div class="col-md-9">
-                                           <select class="form-select" aria-label="Default select example">
+                                           <select class="form-select form-select-lg mb-3" aria-label="Default select example">
                                             <option selected>Select master client</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -195,7 +196,7 @@
                                             <label for="usr">User Type</label>                                        
                                         </div>
                                         <div class="col-md-9">
-                                           <select class="form-select" aria-label="Default select example">
+                                           <select class="form-select form-select-lg mb-3" aria-label="Default select example">
                                             <option selected>Select Type</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -204,45 +205,48 @@
                                         </div>
                                       </div>
                                       <div class="row pt-3">
-                                        <div class="col-md-8">
+                                        <div class="col-md-9 px-4">
                                             <label for="">Select Campaign For the User</label>                                        
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-2 px-3">
                                             <label for="">Select All</label>                                        
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-1 mb-3">
                                             <input class="form-check-input" type="checkbox" value="" id="">
                                         </div>
                                       </div>
-                                      <hr />
-                                      <div class="row pb-3">
-                                        <div class="col-md-11">
-                                            <label for="">WHISP - David</label>                                        
+                                      <div class="card" style="border-radius: 15px;">
+                                      <div class="card-body">
+                                        <div class="row pb-3">
+                                          <div class="col-md-11">
+                                              <label for="">WHISP - David</label>                                        
+                                          </div>
+                                           <div class="col-md-1">
+                                              <input class="form-check-input" type="checkbox" value="" id="">
+                                          </div>
                                         </div>
-                                         <div class="col-md-1">
-                                            <input class="form-check-input" type="checkbox" value="" id="">
+                                        <div class="row pb-3">
+                                          <div class="col-md-11">
+                                              <label for="">WHISP - BREW</label>                                        
+                                          </div>
+                                           <div class="col-md-1">
+                                              <input class="form-check-input" type="checkbox" value="" id="">
+                                          </div>
+                                        </div>
+                                        <div class="row pb-3">
+                                          <div class="col-md-11">
+                                              <label for="">WHISP - PH TEAM</label>                                        
+                                          </div>
+                                           <div class="col-md-1">
+                                              <input class="form-check-input" type="checkbox" value="" id="">
+                                          </div>
                                         </div>
                                       </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-11">
-                                            <label for="">WHISP - BREW</label>                                        
-                                        </div>
-                                         <div class="col-md-1">
-                                            <input class="form-check-input" type="checkbox" value="" id="">
-                                        </div>
-                                      </div>
-                                      <div class="row pb-3">
-                                        <div class="col-md-11">
-                                            <label for="">WHISP - PH TEAM</label>                                        
-                                        </div>
-                                         <div class="col-md-1">
-                                            <input class="form-check-input" type="checkbox" value="" id="">
-                                        </div>
-                                      </div>
+                                      </div>                                    
                                     </div>
                                     <div class="modal-footer">
-                                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                                      <button type="button" class="btn btn-dark">Save</button>
+                                      <button type="button" class="mu_cancel btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                      <button type="button" class="mu_save btn btn-dark">Save</button>
                                     </div>
                                   </div>
                                 </div>
@@ -258,22 +262,22 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                      <div class="row pb-3">
+                                      <div class="row pb-3 g-3">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label for="">First Name</label>
+                                                <label for="FirstName">First Name</label>
                                                 <input type="text" class="form-control" placeholder="First Name">
                                             </div>                                   
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label for="">Last Name</label>
+                                                <label for="LastName">Last Name</label>
                                                 <input type="text" class="form-control" placeholder="Last Name">
                                             </div>                                   
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label for="">Email Address</label>
+                                                <label for="email">Email Address</label>
                                                 <input type="email" class="form-control" placeholder="example@whisp.io">
                                             </div>                                   
                                         </div>                                                                            
@@ -281,13 +285,13 @@
                                       <div class="row pb-3">
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Assign Campaigns</label>
+                                                <label for="AssignCampaigns">Assign Campaigns</label>
                                                 <textarea class="form-control" id="" rows="3"></textarea>
                                             </div>                                 
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">User Type</label>
+                                                <label for="usertype">User Type</label>
                                                     <select class="form-control" id="exampleFormControlSelect1">
                                                         <option>--- Select ---</option>
                                                         <option>1</option>
@@ -327,17 +331,16 @@
                            <!--Import Users Modal-->
                            <div class="modal fade" id="clientsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
-                              <div class="modal-content">
+                              <div class="importmodal modal-content">
                                 <div class="modal-header">
                                   <h5 class="modal-title" id="exampleModalLabel">Add users to whisp</h5>
-
                                 </div>
                                 <div class="modal-body">
                                   <div class="row pb-3">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 align-items-center">
                                         <label for="usr">Select Campaign</label>                                        
                                     </div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-9 align-items-center">
                                       <select class="form-select" aria-label="Default select example">
                                         <option selected>Whisp Corp.'s Plan</option>
                                         <option value="1">One</option>
@@ -346,15 +349,16 @@
                                       </select>
                                     </div>
                                   </div>
-                                  <div class="row pb-3">
-                                    <div class="col-md-9">
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">  
+                                  <div class="row pb-3 justify-content-center">
+                                    <div class="col-md-9 justify-content-center">
+                                      <input id='fileid' type='file' hidden/>
+                                      <input id='buttonid' class="uploadcsv btn btn-outline-secondary rounded-3 text-center" type='button' value='Upload .csv file' />                                        
                                     </div>
                                   </div>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                                  <button type="button" class="btn btn-dark">Save</button>
+                                  <button type="button" class="cancelimport btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                  <button type="button" class="importuser btn btn-dark">Save</button>
                                 </div>
                               </div>
                             </div>
@@ -369,6 +373,17 @@
         </div>
     </div>
 </div>
+<script>
+        const nowtoday = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
+        document.getElementById("todayis").innerHTML = nowtoday.toLocaleDateString(undefined, options);
+
+  document.getElementById('buttonid').addEventListener('click', openDialog);
+
+function openDialog() {
+  document.getElementById('fileid').click();
+}
+</script>
 </body>
 </html>

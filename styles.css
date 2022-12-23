@@ -1,3 +1,9 @@
+/*Overall Font-style*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+body{
+  font-family: 'Outfit', sans-serif;
+}
 /*Left global side bar*/
     .leftSideBar .leftNavigationWrap {
       margin:  0px !important;
@@ -24,7 +30,8 @@
         color: #1B252F;
         font-size:  20px;
     }
-    .rightTopHeader input[type="text"]{
+    .rightTopHeader input[type="text"],
+    .rightTopSearch{
       background:  url(https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a52166ad0ddc7478ea0c23.png);
       background-repeat: no-repeat;
       background-size: 20px;
@@ -63,4 +70,191 @@
 .clientsPageBg {
   background: #eef2f6;
 }
+button.btn.btn-dark.px-4{
+  border-radius: 15px;
+  background-color: #36414C;
+  padding: 12px 12px;
+}
+
+#mmenu_screen > div > div.col-sm-2.h-100.leftSideBar > div > div > div > div > div:nth-child(3) > div > div > a > img{
+  border-radius: 7%!important;
+}
+.clients_ctacancel,
+.clients_ctasave{
+  font-size: 16px;
+  padding: 8px 40px 8px 40px;
+  border-radius: 15px;
+}
+
+.clients_ctasave{
+  background-color: #36414C !important;
+}
 /*clients page*/
+
+/*Account Settings Page*/
+
+/*Left Global Sidenav*/
+.leftSideBar .leftNavigationWrap {
+  margin:  0px !important;
+  padding:  0px !important;
+}
+.leftSideBar .leftNavigation {
+  padding:  0px;
+}
+
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(1) > a,
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > a,
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(3) > a,
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(4) > a {
+  color:  #8F9CA9;
+  width: 100%;
+  display:  block;
+  padding:  5px 0px 5px 15%;
+}
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(1) > a:hover,
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > a:hover,
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(3) > a:hover,
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(4) > a:hover {
+  background-color: #36414C;
+  border-radius: 15px;
+  color:  #ffffff;
+}
+
+.outlogin {
+  background-color: #2b3540;
+  color: #e7e6e6;
+  border-radius: 15px;
+  padding: 12px 60px 12px 60px;
+  border: none;
+  outline: none;
+  justify-content: space-between;
+}
+
+#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(3) > div > div > a > img{
+  border-radius: 7%!important;
+}
+/*End*/
+#v-pills-home-tab,
+#v-pills-profile-tab,
+#v-pills-disabled-tab {
+  margin-bottom: 12px;
+}
+
+#v-pills-home-tab.active,
+#v-pills-profile-tab.active,
+#v-pills-disabled-tab.active {
+  color: #1B252F !important;
+  text-align: left !important; 
+  padding-left: 20px; 
+  padding-right: 40px;
+  background: #FAFCFD 0% 0% no-repeat padding-box !important;
+  border-radius: 15px !important;
+  opacity: 1;
+}
+
+#menu_screen > div > div.col-sm-10.h-100 > div > div > div > div > div > div.col-md-4 > button {
+  margin-top: 20px;
+  font-weight: 100 !important;
+}
+
+#v-pills-disabled > div > div > div > div > div > button.btn.btn-secondary {
+  background-color: #1B252F !important;
+}
+
+#v-pills-disabled > div > div > div > div > div > button.btn.btn-secondary,
+#v-pills-disabled > div > div > div > div > div > button.btn.btn-outline-secondary.me-md-2{
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#v-pills-disabled > div > div > div > div > div > button.btn.btn-outline-secondary.me-md-2:hover span{
+  display: none !important;
+}
+
+#v-pills-disabled > div > div > div > div > div > button.btn.btn-outline-secondary.me-md-2:hover::before{
+  border-radius: 15px;
+  content: 'Cancel' !important;
+}
+
+#v-pills-disabled > div > div > div > div > div > button.btn.btn-outline-secondary.me-md-2:hover{
+ background-color: #EEF2F6 !important;
+ color: #1B252F !important;
+}
+
+/*Account Settings Page*/
+
+/*Manage Users*/
+.MU_leftnav a{
+  color:  #8F9CA9;
+  width: 100%;
+  display:  block;
+  padding:  5px 0px 5px 15%;
+}
+
+.MU_leftnav a:hover{
+  background-color: #36414C;
+  border-radius: 15px;
+  color:  #ffffff;
+}
+
+.uploadcsv{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  outline-style: dashed !important;
+  padding: 40px 100px 40px 100px;
+}
+.uploadcsv::after{
+  content: url('https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5c797408c0b4a4bfd6ee4.svg+xml') !important;
+}
+
+.importuser{
+  border-radius: 15px !important;
+  background-color: #36414C !important;
+  padding: 8px 40px 8px 40px;
+}
+
+.cancelimport{
+  border-radius: 15px !important;
+  padding: 8px 40px 8px 40px;
+}
+
+.accountprofile{
+  border-radius: 7%!important;
+}
+.inviteuser{
+  width: 650px;
+}
+.mu_cancel,
+.mu_save{
+  padding: 10px 40px 10px 40px;
+  border-radius: 15px;
+}
+
+.mu_save{
+  background-color: #1B252F;
+}
+
+.importmodal{
+  width: 600px;
+}
+
+/*Manage Users*/
+
+/*Create Floater*/
+.nav-pills .nav-link.active{
+  background-color: #FFFFFF !important;
+}
+.cf_btn{
+  font-weight: 100; padding-left: 40px; padding-right: 40px; font-size: 16px;
+}
+.cf_browse{
+  padding: 7px 35px 7px 35px;
+}
+/*Create Floater*/
+
+/*Global Modal Edge border radius*/
+.modal-content{
+  border-radius: 20px;
+}
+/*Global Modal Edge border radius*/
