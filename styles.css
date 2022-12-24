@@ -46,6 +46,9 @@ body{
     .rightTopDate span {
       padding-right:  15px;
     }
+    #todayis {
+      font-weight: normal;
+    }
 /*end Right Top Header*/
 
 /*paginations client page*/
@@ -66,16 +69,18 @@ body{
     display: block;
     padding: 10px 10px 10px 10px;
 }
-
 .clientsPageBg {
   background: #eef2f6;
+}
+.clientsPageBg button{
+  background: #36414c !important;
+  margin-top: -15px;
 }
 button.btn.btn-dark.px-4{
   border-radius: 15px;
   background-color: #36414C;
   padding: 12px 12px;
 }
-
 #mmenu_screen > div > div.col-sm-2.h-100.leftSideBar > div > div > div > div > div:nth-child(3) > div > div > a > img{
   border-radius: 7%!important;
 }
@@ -85,9 +90,72 @@ button.btn.btn-dark.px-4{
   padding: 8px 40px 8px 40px;
   border-radius: 15px;
 }
-
 .clients_ctasave{
   background-color: #36414C !important;
+}
+.clientsPageSelect {
+    background: #ffffff;
+    border-radius: 20px;
+    border: solid 1px #e7dddd;
+    margin-left: -10px;
+    margin-right: 10px;
+    color: #66737F;
+    padding-bottom: 15px;
+}
+.clientsPageSelect .selectAll {
+  float:  right;
+  padding-right:  30%;
+}
+.clientsPageSelect input {
+  margin-left:  5px !important;
+  float: right;
+}
+.clientsPageBg .buttn {
+  text-align:  right;
+}
+.clientsPageBg .cAname  {
+    background: rgb(54 65 76);
+    color: #B8C1CC;
+    font-size: 20px;
+    border-radius: 50px;
+    float: right;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+.clientsPageBg .clientLeadsRsult {
+    color: #36414C;
+    font-size: 18px;
+}
+.clientsPageBg .clientName {
+  padding-left:  10px;
+}
+.clientsPageBg .clientLeads {
+  color: #66737F;
+}
+.clientsPageBg .form-check .dropdown {
+  display: none;
+  float:  right;
+  margin-right:  20px;
+}
+.clientsPageBg .form-check:hover .dropdown {
+  display:  block;
+}
+.clientsPageBg .form-check .dropdown .editIcon,
+.clientsPageBg .form-check .dropdown .deleteIcon {
+  width:  50px;
+  float:  left;
+  margin-top: -5px;
+}
+.clientsPageBg .plusNewClient {
+    font-size: 28px;
+    margin-right: 10px;
+    font-family:  auto !important;
+}
+.clientsPageBg .newcClient {
+  float:  right;
 }
 /*clients page*/
 
