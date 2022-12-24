@@ -52,9 +52,11 @@ body{
 /*end Right Top Header*/
 
 /*paginations client page*/
-    #pagination-container ul { list-style-type: none; padding-left: 0em; }
-    #pagination-container ul li { float: left; padding: 3px 10px; border: solid 1px #e7e6e6;}
-    #pagination-container ul .active { background:  black; color:  white;}
+    #pagination-container ul { list-style-type: none; padding-left: 0em; float: right; }
+    #pagination-container ul li { float: left; padding: 3px 10px; color:  #afafa5;}
+    #pagination-container ul .active { background:  unset; color:  #000000;}
+    #pagination-container ul .active:first-child { background: unset; color: #d9cdcd; }
+    #pagination-container ul li:last-child { background:  unset;  color: #d9cdcd; }
 /*END paginations client page*/
 
 /*clients page*/
@@ -75,6 +77,8 @@ body{
 .clientsPageBg button{
   background: #36414c !important;
   margin-top: -15px;
+  float: right;
+  margin-right: 10px;
 }
 button.btn.btn-dark.px-4{
   border-radius: 15px;
@@ -150,7 +154,7 @@ button.btn.btn-dark.px-4{
   margin-top: -5px;
 }
 .clientsPageBg .plusNewClient {
-    font-size: 28px;
+    font-size: 20px;
     margin-right: 10px;
     font-family:  auto !important;
 }
@@ -169,6 +173,40 @@ button.btn.btn-dark.px-4{
 .leftSideBar .leftNavigation {
   padding:  0px;
 }
+
+.clientsPageBg #clientsModal .btn-close {
+  background: none !important;
+}
+
+.clientsPageBg .modal-footer, .clientsPageBg .modal-header {
+  border:  0px !important;
+}
+
+.clientsPageBg .modal-header .modal-title {
+    color: #36414c;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.clientsPageBg .modal-body label {
+    color: #36414c;
+    font-size: 16px;
+}
+
+.clientsPageBg .clients_ctacancel {
+    background: unset !important;
+    border: solid 1px #f1e8e8;
+    color: #ddc4c4;
+}
+
+.clientsPageBg .clients_ctasave {
+  font-weight:  normal !important;
+}
+
+.clientsPageBg ::placeholder, .clientsPageBg .modal-body select { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c7baba;
+}
+
 
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(1) > a,
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > a,
