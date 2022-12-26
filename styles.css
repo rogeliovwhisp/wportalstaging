@@ -359,6 +359,42 @@ button.btn.btn-dark.px-4{
 }
 /*Create Floater*/
 
+/*Create Whisp Wheel*/
+.form-control-color {
+  border: none !important;
+  width: 2.1em;
+  height: calc(1.1em + 1.1rem + -7px);
+  padding: 0.375rem;
+}
+
+.colorselector{
+  display: flex;
+}
+.colorselector li{
+  list-style: none;
+}
+.addtrack {
+border-radius: 15px;
+border: #B8C1CC solid 2px;
+padding: 10px 40px 10px 40px;
+}
+
+.confgbtn, .confgbtn1 {
+border-radius: 15px;
+padding: 10px 40px 10px 40px;
+}
+
+.confgbtn1{
+  background-color: #36414c;
+}
+
+.plusbtn{
+  position:fixed;
+  bottom: 0;
+  right: 0;
+}
+/*Create Whisp Wheel*/
+
 /*Global Modal Edge border radius*/
 .modal-content{
   border-radius: 20px;
