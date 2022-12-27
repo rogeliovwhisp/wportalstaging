@@ -350,7 +350,7 @@ button.btn.btn-dark.px-4{
   width: 600px;
 }
 
-/*Manage Users*/
+/* End of Manage Users*/
 
 /*Create Floater*/
 .nav-pills .nav-link.active{
@@ -365,6 +365,12 @@ button.btn.btn-dark.px-4{
 /*Create Floater*/
 
 /*Create Whisp Wheel*/
+.cw_btn{
+  font-weight: 100; padding-left: 40px; padding-right: 40px; font-size: 16px;
+}
+.cw_browse{
+  padding: 7px 35px 7px 35px;
+}
 .form-control-color {
   border: none !important;
   width: 2.1em;
@@ -400,27 +406,68 @@ padding: 10px 40px 10px 40px;
 }
 /*Create Whisp Wheel*/
 
+
+/*Client Page Edit*/
+.clientsPageBtnCancel {
+  background: #ede6e6 !important;
+  color: #b4bfcc;
+  border: 0px;
+  padding: 8px 15px !important;
+  border-radius: 10px;
+} 
+
+.clientsPageBtnSave {
+  background: #36414c !important;
+  color: #b4bfcc;
+  border: 0px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/*Campaign Page*/
+.newcampaign{
+  border-radius: 15px;
+  padding: 10px 40px 10px 40px;
+  background-color: #36414c;
+}
+/*End of Campaign Page*/
+
+/*New Campaign & Edit Campaign*/
+.NC_cta_Cancel,
+.EC_cta_Cancel{
+  border-radius: 15px;
+  padding: 10px 30px 10px 30px;
+}
+
+.NC_cta_Save,
+.EC_cta_Save{
+  border-radius: 15px;
+  padding: 10px 30px 10px 30px;
+}
+/*End of New Campaign & Edit Campaign*/
+
+/*Global tab function adjustment*/
+.nav-pills .nav-link{
+  color: #36414C !important;
+}
+/*End of tab Function Adjustment*/
+
+/*Global Switch Element Height Adjustment*/
+.form-switch .form-check-input{
+  width: 36px !important;
+  height: 20px;
+}
+/*End of Globel Swtich Element Adjustment*/ 
+
 /*Global Modal Edge border radius*/
 .modal-content{
   border-radius: 20px;
 }
 /*Global Modal Edge border radius*/
 
-/*Client Page Edit*/
-.clientsPageBtnCancel {
-    background: #ede6e6 !important;
-    color: #b4bfcc;
-    border: 0px;
-    padding: 8px 15px !important;
-    border-radius: 10px;
-} 
-
-.clientsPageBtnSave {
-    background: #36414c !important;
-    color: #b4bfcc;
-    border: 0px;
-    padding: 8px 15px;
-    border-radius: 10px;
-    color: #ffffff;
+/*Global Card Container Adjustment*/
+.card{
+  border-radius: 15px;
 }
-
+/*End of Global Card adjustment*/

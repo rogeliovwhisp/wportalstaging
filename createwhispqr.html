@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Whisp Wheel Creation | Portal</title>
+    <title>Whisp QR Creation | Portal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
@@ -67,7 +67,7 @@
                                 <div class=''>
                                     <div class="row" style="background: #FFFFFF;">
                                         <div class="col-sm-6 py-3 px-4">
-                                            <h3 style="font-family:'Outfit', sans-serif;">Create a Whisp Wheel</h3>
+                                            <h3 style="font-family:'Outfit', sans-serif;">Create a Whisp QR</h3>
                                         </div>
                                         <div class="col-sm-3 py-3 px-4">
                                             <div class="input-group mb-3">
@@ -90,7 +90,7 @@
                                     <!--start menu selector-->
                                     <div class="row text-center py-3 px-4 mt-3">
                                       <div class="h-100 d-inline-flex">
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-8" style="width: 67.666667%;">
                                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                               <li class="nav-item" role="presentation">
                                                 <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b8570fd8a66.svg+xml"></button>
@@ -110,10 +110,13 @@
                                               <li class="nav-item" role="presentation">
                                                 <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d22bc909757.svg+xml"> </button>
                                               </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link text-info" id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63aaf7f7d2d3d821f6d49916.svg+xml">&nbsp; Download</button>
+                                              </li>
                                             </ul>
 
                                         </div>
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-4">
                                             <div class="d-grid gap-4 d-md-flex justify-content-md-end">
                                                 
                                                 <a href="createwhisp.html" class="btn  btn-outline-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="font-family: 'Outfit', sans-serif; font-weight: 100; padding-left: 40px; padding-right: 40px;">Cancel</a>
@@ -133,15 +136,34 @@
                                                     <div class="row"> 
                                                         <div class="col-sm-7">
                                                             <div class="card">
-                                                              <div class="card-body">
-                                                                This is some text within a card body.
+                                                              <div class="card-body" style="height: 80vh;"> 
+                                                                <form>
+                                                                    <div class="col-sm-6 mb-3">
+                                                                        <label for="exampleFormControlInput1" class="form-label">Label QR</label>
+                                                                        <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <div class="form-check form-switch mb-3">
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                                            <label class="form-check-label" for="flexSwitchCheckDefault">Direct QR Scan to a website instead of auto messaging</label>
+                                                                        </div>
+                                                                        <div class="form-check form-switch">
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                                            <label class="form-check-label" for="flexSwitchCheckChecked">Show terms and conditions before whisp</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
                                                               </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5">
                                                             <div class="card">
                                                               <div class="card-body">
-                                                                This is some text within a card body.
+                                                                <div class="pt-5 text-center center-block mb-5">
+                                                                    <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fcd2454bc6ea267f9d.svg+xml" width="">
+                                                                    <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">QR Code</h5>
+                                                                    <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for print media, web pages & Social Media</p>
+                                                                </div>
                                                               </div>
                                                             </div>
                                                         </div> 
@@ -153,7 +175,24 @@
                                                 <!-- SMS -->
                                                 <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
                                                     <div class="row">
-                                                        sms
+                                                       <div class="col-sm-7">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                Your Content Goes Here
+                                                            </div>
+                                                        </div>
+                                                       </div>
+                                                       <div class="col-sm-5">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="pt-5 text-center center-block mb-5">
+                                                                    <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fcd2454bc6ea267f9d.svg+xml" width="">
+                                                                    <h5 class="card-title">QR Code</h5>
+                                                                    <p class="card-text" style="color: #B8C1CC;">Best for print media, web pages & Social Media</p>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                       </div>
                                                     </div>
                                                 </div>
                                                 <!-- end sms -->
@@ -190,8 +229,10 @@
                                                         code
                                                     </div>
                                                 </div>
+                                                <!--End Code-->
                                                 
-                                                </div>
+                                                
+                                            </div>
                                                     
                                         </div>
                                     </div>
