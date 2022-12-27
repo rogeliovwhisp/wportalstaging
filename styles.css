@@ -163,6 +163,10 @@ button.btn.btn-dark.px-4{
 .clientsPageBg .newcClient {
   float:  right;
 }
+
+.clientsPageBtnCancel button{
+  background: red !important;
+}
 /*clients page*/
 
 /*Account Settings Page*/
@@ -401,3 +405,22 @@ padding: 10px 40px 10px 40px;
   border-radius: 20px;
 }
 /*Global Modal Edge border radius*/
+
+/*Client Page Edit*/
+.clientsPageBtnCancel {
+    background: #ede6e6 !important;
+    color: #b4bfcc;
+    border: 0px;
+    padding: 8px 15px ;
+    border-radius: 10px;
+} 
+
+.clientsPageBtnSave {
+    background: #36414c !important;
+    color: #b4bfcc;
+    border: 0px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
