@@ -52,11 +52,13 @@ body{
 /*end Right Top Header*/
 
 /*paginations client page*/
-    #pagination-container ul { list-style-type: none; padding-left: 0em; float: right; }
-    #pagination-container ul li { float: left; padding: 3px 10px; color:  #afafa5;}
-    #pagination-container ul .active { background:  unset; color:  #000000;}
-    #pagination-container ul .active:first-child { background: unset; color: #d9cdcd; }
-    #pagination-container ul li:last-child { background:  unset;  color: #d9cdcd; }
+    #pagination-container-clients ul { list-style-type: none; padding-left: 0em; float: right; }
+    #pagination-container-clients ul li { float: left; padding: 3px 10px; color:  #afafa5;}
+    #pagination-container-clients ul .active { background:  unset; color:  #000000;}
+    #pagination-container-clients ul .active:first-child { background: unset; color: #d9cdcd; }
+    #pagination-container-clients ul li:last-child { background:  unset;  color: #d9cdcd; }
+    #pagination-container-clients {  padding-bottom: 100px; }
+    #pagination-container-clients ul li:hover { opacity: .8; }
 /*END paginations client page*/
 
 /*clients page*/
@@ -206,7 +208,6 @@ button.btn.btn-dark.px-4{
 .clientsPageBg ::placeholder, .clientsPageBg .modal-body select { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #c7baba;
 }
-
 
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(1) > a,
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > a,
