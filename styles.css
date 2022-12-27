@@ -411,7 +411,7 @@ padding: 10px 40px 10px 40px;
     background: #ede6e6 !important;
     color: #b4bfcc;
     border: 0px;
-    padding: 8px 15px ;
+    padding: 8px 15px !important;
     border-radius: 10px;
 } 
 
