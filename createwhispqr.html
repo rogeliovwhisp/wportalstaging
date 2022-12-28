@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Whisp Wheel Creation | Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="menu_screen" class="container-fluid d-flex">
+        <div class="row flex-fill" style='min-height: 100vh'>
+            <!-- left column -->
+            <div class="col-sm-2 h-100">
+                <div class="row h-100" style="background:#1b252f">
+                    <div class="col-sm-12">
+                        <div class="h-100 justify-content-middle py-5 py-5">
+                            <div class="row">
+                                <div class="col-sm-12 text-center mb-5">
+                                    <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' style='width: 70%'/>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <ul style="padding: 0;">
+                                        <li class="mb-3"><a href="dashboard.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc21c8ea39e8.svg+xml"> &nbsp; Dashboard</a></li>
+                                        <li class="mb-3"><a href="clients.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc1bc7ea39ea.svg+xml"> &nbsp; Clients</a></li>
+                                        <li class="mb-3"><a href="manageUsers.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc4c00ea39e9.svg+xml"> &nbsp; Manage Users</a></li>
+                                        <li class="mb-2"><a href="accountsettings.html" class="text-secondary text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b978ad0ddc4e6dea3a08.svg+xml"> &nbsp; Settings</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <div class="fixed-bottom p-4" style="width: 20%;">
+                                        <div class="dropdown">
+                                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                                                <p class="text-white"><b>John Doe</b><br/>administrator</p>
+                                            </a>
+                                            <ul class="dropdown-menu text-small shadow">
+                                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                            </ul>
+                                            <button class="outlogin"> Logout  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Right Column-->
+            <div class="col-sm-10 h-100">
+                <div class="row h-100" style="background:#EEF2F6">
+                    <div class="col-sm-12">
+                        <div class="h-100 d-grid align-items-left justify-content-left">
+                            <div class=''>
+                                <div class=''>
+                                    <div class="row" style="background: #FFFFFF;">
+                                        <div class="col-sm-6 py-3 px-4">
+                                            <h3 style="font-family:'Outfit', sans-serif;">Create a Whisp Wheel</h3>
+                                        </div>
+                                        <div class="col-sm-3 py-3 px-4">
+                                            <div class="input-group mb-3">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select Client</option>
+                                                    <option value="1">Affiliate Partner Network</option>
+                                                    <option value="2">Canna Taxi</option>
+                                                    <option value="3">Compass Mortgage</option>
+                                                    <option value="4">Converge Marketing</option>
+                                                    <option value="5">CR Fitness</option>
+                                                    <option value="6">Credit Associates</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 py-4">
+                                            <p id="todayis" class="h6 text-muted" style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
+                                        </div>
+                                    </div>
+
+                                    <!--start menu selector-->
+                                    <div class="row text-center py-3 px-4 mt-3">
+                                      <div class="h-100 d-inline-flex">
+                                        <div class="col-sm-7">
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b8570fd8a66.svg+xml"></button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link text-info" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1dbdc6909759.svg+xml"> </button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link text-info" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effcad0ddcf2a0ea5b17.svg+xml"> </button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link text-info" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b6edefd8a65.svg+xml"> </button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link text-info" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d3f92909758.svg+xml"> </button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d22bc909757.svg+xml"> </button>
+                                              </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                                                
+                                                <a href="createwhisp.html" class="btn  btn-outline-secondary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="font-family: 'Outfit', sans-serif; font-weight: 100; padding-left: 40px; padding-right: 40px;">Cancel</a>
+                                                <button type="button" class="btn btn-secondary btn-lg" style="background-color: #36414C !important; font-family: 'Outfit', sans-serif; font-weight: 100; padding-left: 20px; padding-right: 20px;">Save Changes</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--End menu Selector-->
+                                    <!--Start body content tab-->
+                                    <div class="">
+                                        <div class="row px-4">                                            
+                                            <div class="tab-content" id="pills-tabContent">
+
+                                                <!--info tab-->
+                                                <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                                                    <div class="row">
+                                                        info   
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+                                                    </div>
+                                                </div>
+                                                <!-- end info -->
+
+                                                <!-- SMS -->
+                                                <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
+                                                    <div class="row">
+                                                        sms
+                                                    </div>
+                                                </div>
+                                                <!-- end sms -->
+
+
+                                                <!-- style -->
+                                                <div class="tab-pane fade" id="pills-style" role="tabpanel" aria-labelledby="pills-style-tab">
+                                                    <div class="row">
+                                                       style
+                                                    </div>
+                                                </div>
+                                                <!-- end style -->
+
+                                                <!-- track -->
+                                                <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
+                                                    <div class="row">
+                                                        track
+                                                    </div>
+                                                </div>
+                                                <!-- end track -->
+
+                                                <!-- integrate -->
+                                                <div class="tab-pane fade" id="pills-integrate" role="tabpanel" aria-labelledby="pills-integrate-tab">
+                                                    <div class="row">
+                                                         integrate
+                                                    </div>
+                                                </div>
+                                    
+                                                <!-- end integrate -->
+
+                                                <!-- code -->
+                                                <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
+                                                    <div class="row">
+                                                        code
+                                                    </div>
+                                                </div>
+                                                
+                                                </div>
+                                                    
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                                     
+                                    <!--End-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const nowtoday = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+        document.getElementById("todayis").innerHTML = nowtoday.toLocaleDateString(undefined, options);
+    </script>
+</body>
+</html>
