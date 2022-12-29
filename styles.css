@@ -497,3 +497,18 @@ padding: 10px 40px 10px 40px;
   border-radius: 15px;
 }
 /*End of Global Card adjustment*/
+
+/*Create QR page*/
+.createqrpage .nav-pills .nav-link {
+  font-size: 20px !important;
+  border-radius: 20px;
+}
+
+.createqrpage .nav-pills .nav-link {
+  color: gray !important;
+}
+
+.createqrpage .nav-pills .active {
+  color: #000000 !important;
+}
+

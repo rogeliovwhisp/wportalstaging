@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
@@ -64,13 +63,15 @@
                     <div class="col-sm-12">
                         <div class="h-100 d-grid align-items-left justify-content-left">
                             <div class=''>
-                                <div class=''>
-                                    <div class="row" style="background: #FFFFFF;">
-                                        <div class="col-sm-6 py-3 px-4">
-                                            <h3 style="font-family:'Outfit', sans-serif;">Create a Whisp QR</h3>
-                                        </div>
-                                        <div class="col-sm-3 py-3 px-4">
-                                            <div class="input-group mb-3">
+                                <div class='' >
+
+                                    <!-- Right Top Header-->
+                                   <div class="row rightTopHeader pt-3 pb-3" style="background:#ffffff">
+                                      <div class="col-sm-5">
+                                          <h4 class='pt-2 px-4 font-weight-bold' style="font-family:'Outfit', sans-serif;">Clients</h4>
+                                      </div>
+                                      <div class="col-sm-4">
+                                          <div class="input-group mb-3">
                                                 <select class="form-select" aria-label="Default select example">
                                                     <option selected>Select Client</option>
                                                     <option value="1">Affiliate Partner Network</option>
@@ -81,37 +82,38 @@
                                                     <option value="6">Credit Associates</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-3 py-4">
-                                            <p id="todayis" class="h6 text-muted" style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
-                                        </div>
-                                    </div>
+                                      </div>
+                                      <div class="col-sm-3 rightTopDate">
+                                        <p id="todayis" class="h6 text-muted"  style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
+                                      </div>
+                                   </div>
+                                   <!-- End Right Top Header-->
 
                                     <!--start menu selector-->
                                     <div class="row text-center py-3 px-4 mt-3">
                                       <div class="h-100 d-inline-flex">
-                                        <div class="col-sm-8" style="width: 67.666667%;">
+                                        <div class="col-sm-8 createqrpage">
                                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b8570fd8a66.svg+xml"></button>
+                                                <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-info-circle"></i> &nbsp;&nbsp;info</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1dbdc6909759.svg+xml"> </button>
+                                                <button class="nav-link text-info" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false"><i class="bi bi-chat-dots"></i>&nbsp;&nbsp;SMS</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effcad0ddcf2a0ea5b17.svg+xml"> </button>
+                                                <button class="nav-link text-info" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false"><i class="bi bi-palette"></i>&nbsp;&nbsp;Style</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b6edefd8a65.svg+xml"> </button>
+                                                <button class="nav-link text-info" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false"><i class="bi bi-bookmark"></i>&nbsp;&nbsp;Track</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d3f92909758.svg+xml"> </button>
+                                                <button class="nav-link text-info" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false"><i class="bi bi-share"></i>&nbsp;&nbsp;Integrate</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d22bc909757.svg+xml"> </button>
+                                                <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><i class="bi bi-code-slash"></i>&nbsp;&nbsp;Code</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="false">Download &nbsp; <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63aaf7f7d2d3d821f6d49916.svg+xml"></button>
+                                                <button class="nav-link text-info" id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="false">Download &nbsp; &nbsp;<i class="bi bi-cloud-arrow-down"></i></button>
                                               </li>
                                             </ul>
 
