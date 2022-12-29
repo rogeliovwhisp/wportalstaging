@@ -227,7 +227,6 @@ button.btn.btn-dark.px-4{
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(3) > a:hover,
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(4) > a:hover {
   background-color: #36414C;
-  border-radius: 15px;
   color:  #ffffff;
 }
 
@@ -304,7 +303,7 @@ button.btn.btn-dark.px-4{
 
 .MU_leftnav a:hover{
   background-color: #36414C;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   color:  #ffffff;
 }
 
@@ -498,10 +497,18 @@ padding: 10px 40px 10px 40px;
 }
 /*End of Global Card adjustment*/
 
+/*Global Radio button Mark color*/
+.form-check-input:checked{
+  background-color: #66737F !important;
+  border-color: #66737F !important;
+}
+/*End of Global Radio button Mark color*/
+
+
 /*Create QR page*/
 .createqrpage .nav-pills .nav-link {
-  font-size: 20px !important;
-  border-radius: 20px;
+  font-size: 14px !important;
+  border-radius: 13px;
 }
 
 .createqrpage .nav-pills .nav-link {
