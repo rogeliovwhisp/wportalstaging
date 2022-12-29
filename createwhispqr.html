@@ -111,7 +111,7 @@
                                                 <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d22bc909757.svg+xml"> </button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="false"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63aaf7f7d2d3d821f6d49916.svg+xml">&nbsp; Download</button>
+                                                <button class="nav-link text-info" id="pills-download-tab" data-bs-toggle="pill" data-bs-target="#pills-download" type="button" role="tab" aria-controls="pills-download" aria-selected="false">Download &nbsp; <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63aaf7f7d2d3d821f6d49916.svg+xml"></button>
                                               </li>
                                             </ul>
 
@@ -135,7 +135,7 @@
                                                 <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
                                                     <div class="row"> 
                                                         <div class="col-sm-7">
-                                                            <div class="card">
+                                                            <div class="card border-0">
                                                               <div class="card-body" style="height: 80vh;"> 
                                                                 <form>
                                                                     <div class="col-sm-6 mb-3">
@@ -157,7 +157,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-5">
-                                                            <div class="card">
+                                                            <div class="card border-0">
                                                               <div class="card-body">
                                                                 <div class="pt-5 text-center center-block mb-5">
                                                                     <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fcd2454bc6ea267f9d.svg+xml" width="">
@@ -175,24 +175,62 @@
                                                 <!-- SMS -->
                                                 <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
                                                     <div class="row">
-                                                       <div class="col-sm-7">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                Your Content Goes Here
+                                                        <div class="col-sm-7">
+                                                          <div class=" py-3 p-2" style="background: #FFFFFF; border-radius: 15px;">
+                                                            <div class="row py-3 px-4">
+                                                                <div class="col-sm-7">
+                                                                    <div class="card border-0" style="border-radius: 15px; ">
+                                                                        <div class="card-body">
+                                                                            <form class="row g-3 needs-validation" novalidate>
+                                                                                <div class="text-left left-block mb-5">
+                                                                                    <span class="mb-3"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63ab07428b212b2d6f26fbb9.png"> &nbsp; Jane Doe</span>
+                                                                                    <div class="floating py-3 pt-3">
+                                                                                        <textarea class="form-control" placeholder="SMS message text" id="floatingTextarea2" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea>
+
+                                                                                        <img class="float-end py-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a07dfe4100713531b16932.png">                                                                                
+                                                                                        <textarea class="form-control" placeholder="SMS message reply" id="floatingTextarea" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea>
+
+                                                                                        <img class="float-end py-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a07dfe4100713531b16932.png"> 
+                                                                                        <textarea class="form-control" placeholder="SMS message reply" id="floatingTextarea2" style="font-family: 'Outfit', sans-serif; height: 100px;"></textarea> 
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-5">
+                                                                    <div class="form-check form-switch text-center center-block mb-5 pb-15" style='padding-left: 0px !important'>
+                                                                        <input class="form-check-input mx-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" >
+                                                                        <label class="pb-3 form-check-label h6" for="flexSwitchCheckDefault" style="font-family: 'Outfit', sans-serif">Enable Data Validation</label>
+
+                                                                        <div class="uploadfile pt-5 text-center center-block mb-5 px-4 py-4" style="border:#ADB9C7 dashed 2px; border-radius: 15px;">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image" viewBox="0 0 16 16">
+                                                                                <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                                                <path d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z"/>
+                                                                            </svg>
+                                                                            <p style="color: #ADB9C7;font-family:'Outfit',sans-serif;font-size: 11px;">Upload a picture <br> PNG, JPG</p>
+                                                                            <button type="submit" class="cf_browse btn btn-outline-secondary mt-3 rounded-5">Browse</button>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                                
                                                             </div>
+                                                            
+                                                           
+                                                          </div>
+                                                            
                                                         </div>
-                                                       </div>
-                                                       <div class="col-sm-5">
-                                                        <div class="card">
-                                                            <div class="card-body">
+                                                         <div class="col-sm-5">
+                                                            <div class="card border-0">
+                                                              <div class="card-body">
                                                                 <div class="pt-5 text-center center-block mb-5">
                                                                     <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fcd2454bc6ea267f9d.svg+xml" width="">
-                                                                    <h5 class="card-title">QR Code</h5>
-                                                                    <p class="card-text" style="color: #B8C1CC;">Best for print media, web pages & Social Media</p>
-                                                                </div> 
+                                                                    <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">QR Code</h5>
+                                                                    <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for print media, web pages & Social Media</p>
+                                                                </div>
+                                                              </div>
                                                             </div>
-                                                        </div>
-                                                       </div>
+                                                        </div> 
                                                     </div>
                                                 </div>
                                                 <!-- end sms -->
