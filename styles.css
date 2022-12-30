@@ -213,23 +213,6 @@ button.btn.btn-dark.px-4{
   color: #c7baba;
 }
 
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(1) > a,
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > a,
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(3) > a,
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(4) > a {
-  color:  #8F9CA9;
-  width: 100%;
-  display:  block;
-  padding:  5px 0px 5px 15%;
-}
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(1) > a:hover,
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > a:hover,
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(3) > a:hover,
-#menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(2) > ul > li:nth-child(4) > a:hover {
-  background-color: #36414C;
-  color:  #ffffff;
-}
-
 .outlogin {
   background-color: #2b3540;
   color: #e7e6e6;
@@ -507,7 +490,7 @@ padding: 10px 40px 10px 40px;
 
 /*Create QR page*/
 .createqrpage .nav-pills .nav-link {
-  font-size: 14px !important;
+  font-size: 16px !important;
   border-radius: 13px;
 }
 
@@ -537,4 +520,10 @@ padding: 10px 40px 10px 40px;
 
 .createqrselectqr:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1300px){
+.cw_button, .cf_bttn, .cqr_button {
+    font-size: 10px !important;
+  }
 }
