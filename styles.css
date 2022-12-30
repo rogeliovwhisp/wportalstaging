@@ -519,3 +519,22 @@ padding: 10px 40px 10px 40px;
   color: #000000 !important;
 }
 
+.createqrselectqr  {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.createqrselectqr:hover {
+    opacity: 1;
+}
