@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Temp Format | Portal</title>
+    <title>Client Profile | Portal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
@@ -15,46 +15,52 @@
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
         <div class="row flex-fill" style='min-height: 100vh'>
+
             <!-- left column -->
-            <div class="col-sm-2 h-100">
-                <div class="row h-100" style="background:#1b252f">
-                    <div class="col-sm-12">
-                        <div class="h-100 justify-content-middle py-5 py-5">
-                            <div class="row">
-                                <div class="col-sm-12 text-center mb-5">
-                                    <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' style='width: 70%'/>
-                                </div>
 
-                                <div class="row leftNavigationWrap">
-                                  <ul class="leftNavigation">
-                                    <li class="mb-3"><a href="dashboard.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc21c8ea39e8.svg+xml"> &nbsp; Dashboard</a></li>
-                                    <li class="mb-3"><a href="clients.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc1bc7ea39ea.svg+xml">&nbsp; Clients</a></li>
-                                    <li class="mb-3"><a href="manageUsers.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc4c00ea39e9.svg+xml">&nbsp; Manage Users</a></li>
-                                    <li class="mb-2"><a href="accountsettings.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b978ad0ddc4e6dea3a08.svg+xml"> &nbsp; Settings</a></li>
-                                  </ul>
-                                </div>
-
-                                <div class="col-sm-12">
-                                    <div class="fixed-bottom p-4">
-                                        <div class="dropdown">
-                                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                                                <p class="text-white"><b>John Doe</b><br/>administrator</p>
-                                            </a>
-                                            <ul class="dropdown-menu text-small shadow">
-                                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                            </ul>
-                                        </div>
-                                        <button class="outlogin"> Logout  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
+            <!--Left Global Sidebar-->
+            <div class="col-sm-2 h-100 leftSideBar">
+              <div class="row h-100" style="background:#1b252f">
+                  <div class="col-sm-12">
+                      <div class="h-100  justify-content-middle py-4">
+                        <div class="row">
+                          <div class="col-sm-12 text-center mb-5">
+                            <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' style='width: 160px'/>
+                          </div>
+  
+                              <div class="row leftNavigationWrap">
+                                <ul class="leftNavigation">
+                                  <li class="mb-3"><a href="dashboard.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc21c8ea39e8.svg+xml"> &nbsp; Dashboard</a></li>
+                                  <li class="mb-3"><a href="clients.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc1bc7ea39ea.svg+xml">&nbsp; Clients</a></li>
+                                  <li class="mb-3"><a href="manageUsers.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b8e1ad0ddc4c00ea39e9.svg+xml">&nbsp; Manage Users</a></li>
+                                  <li class="mb-2"><a href="accountsettings.html" class="text-decoration-none"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b978ad0ddc4e6dea3a08.svg+xml"> &nbsp; Settings</a></li>
+                                </ul>
+                              </div>
+  
+                              <div class="col-sm-12">
+                                <div class="fixed-bottom p-4" style="width: 20%;">
+                                  <div class="dropdown">
+                                      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                                      <p class="text-white"><b>John Doe</b><br/>administrator</p>
+                                      </a>
+                                      <ul class="dropdown-menu text-small shadow">
+                                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <!-- <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Log out</a></li> -->
+                                      </ul>
                                     </div>
+                                    <button class="outlogin"> Logout  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
                                 </div>
-                            </div>
+                              </div>
+  
                         </div>
-                    </div>
-                </div>
-            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>  
+            <!--Left Global Sidebar-->
 
             <!--Right Column-->
             <div class="col-sm-10 h-100">
@@ -63,22 +69,24 @@
                         <div class="h-100 d-grid align-items-left justify-content-left">
                             <div class=''>
                                 <div class=''>
-                                    <div class="row" style="background: #FFFFFF;">
-                                        <div class="col-sm-6 py-3 px-4">
-                                            <h3 style="font-family:'Outfit', sans-serif;">Client Profile</h3>
-                                        </div>
-                                        <div class="col-sm-3 py-3 px-4">
-                                          <div class="input-group">
-                                            <input type="text" class="form-control rounded-pill rightTopSearch" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                            <div class="input-group-append d-none">
-                                              <button class="btn btn-outline-secondary" type="button">s</button>
-                                            </div>
+                                  <!--Right top Header-->
+                                  <div class="row rightTopHeader pt-3 pb-3" style="background:#ffffff">
+                                    <div class="col-sm-5">
+                                        <h4 class='pt-2 px-4 font-weight-bold'>Client Profile</h4>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control rounded-pill rightTopSearch" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                          <div class="input-group-append d-none">
+                                            <button class="btn btn-outline-secondary" type="button">s</button>
                                           </div>
                                         </div>
-                                        <div class="col-sm-3 py-4">
-                                          <p id="todayis" class="h6 text-muted"  style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
-                                        </div>
                                     </div>
+                                    <div class="col-sm-3 rightTopDate">
+                                      <p id="todayis" class="h6 text-muted"  style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
+                                    </div>
+                                 </div>
+                                    <!--End of right top header-->
                                     <!--Header rating content-->
                                     <div class="col-sm-12">
                                       <div class="row">
@@ -98,12 +106,21 @@
                                           </div>
                                         </div>
                                         <div class="col-sm-3 py-4" style="width: 21%;">
-                                          <div class="card mb-3" style="width: 228px;height: 168px;">
-                                            <div class="card-body">
-                                              <p class="card-text">Total Leads</p>
-                                              <h5 class="card-title fs-3 fw-bold">275</h5>
-                                              <p class="card-text" style="color: #84D5A7;">+0,8%</p>
+                                          <div class="row">
+                                            <div class="col-sm-2">
+                                              <div class="card mb-3" style="width: 228px;height: 168px;">
+                                                <div class="card-body">
+                                                  <p class="card-text">Total Leads</p>
+                                                  <h5 class="card-title fs-3 fw-bold">275</h5>
+                                                  <p class="card-text" style="color: #84D5A7;">+0,8%</p>
+                                                </div>
+                                              </div>
                                             </div>
+                                            <!--Circular Progress Bar-->
+                                            <div class="col-sm-3">
+                                              Circular progress bar
+                                            </div>
+                                            <!--End of Circular Progress Bar-->
                                           </div>
                                         </div>
                                         <div class="col-sm-3 py-4" style="width: 21%;">
@@ -137,9 +154,12 @@
                                           <div class="bg-body-tertiary border ms-auto align-items-center">
                                             <select class="selectcamp form-select form-select-lg " aria-label=".form-select-lg example">
                                               <option selected>Select Campaign</option>
-                                              <option value="1">One</option>
-                                              <option value="2">Two</option>
-                                              <option value="3">Three</option>
+                                              <option value="1">Whisp - Cortney</option>
+                                              <option value="2">Whisp - David</option>
+                                              <option value="3">Whisp - Drew</option>
+                                              <option value="4">Whisp - Nicky</option>
+                                              <option value="5">Whisp - PH Team</option>
+                                              <option value="6">Whisp - Rick</option>
                                             </select>                                            
                                           </div>
 
@@ -151,29 +171,79 @@
                                     </div>
                                     <!--End of Search and CTA section-->
                                     <!--Whisp Data list-->
-                                    <div class="col-sm-12 py-5">
-                                      <div class="card">
-                                        <div class="card-body">
-                                          <div class="row justify-content-start">
-                                            <div class="col-sm-2 float-start">
-                                              <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63ac8d44408c0b1fdaffccb2.svg+xml">
-                                            </div>
-                                            <div class="col-sm-2">
-                                              <h5 class=" fw-normal align-items-center float-start text-left py-3">Website wheel</h5>
-                                            </div>
-                                            <div class="col-sm-2 float-start py-3"><p>w985d52</p></div>
-                                            <div class="col-sm-2 float-end"><button class="btn btn-light py-3"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1d106590903d.svg+xml"></button></div>
-                                            <div class="col-sm-2 float-end"><button class="btn btn-light py-3"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1da1d590903e.svg+xml"></button></div>
-                                            <div class="col-sm-2 float-end">
-                                              <div class="form-check form-switch align-items-center py-3">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                                                <label class="form-check-label" for="flexSwitchCheckDefault">Enable</label>
+                                    <!--Start Whisp Wheel-->
+                                      <div class="row py-4">
+                                        <div class="col-sm-12">
+                                          <div class="card">
+                                            <div class="card-body">
+                                              <div class="hstack gap-3">
+                                                <div class="bg-body-tertiary border px-4"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63ac8d44408c0b1fdaffccb2.svg+xml"></div>
+                                                <div class="bg-body-tertiary border px-4"><h5>Website wheel</h5></div>
+                                                <div class="bg-body-tertiary border px-4"><p class="align-items-center text-left">w985d52</p></div>
+                                                <div class="bg-body-tertiary border ms-auto px-4"><a href="createwhispwheel.html"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1d106590903d.svg+xml"></a></div>
+                                                <div class="bg-body-tertiary border px-4"><a href="#"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1da1d590903e.svg+xml"></a></div>
+                                                <div class="bg-body-tertiary border px-4"><div class="form-check form-switch form-check-reverse">
+                                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                                                  <label class="form-check-label" for="flexSwitchCheckReverse">Enable &nbsp;</label>
+                                                </div>
+                                                </div>
                                               </div>
                                             </div>
                                           </div>
-                                        </div>    
+                                        </div>
+                                      </div>                                    
+                                      <!--End of Whisp Wheel-->
+                                      <!--Start of whisp QR-->
+                                      <div class="row py-2">
+                                        <div class="col-sm-12">
+                                          <div class="card">
+                                            <div class="card-body">
+                                              <div class="hstack gap-3">
+                                                <div class="bg-body-tertiary border px-4"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63ad9fdead0ddce569ed3d3d.svg+xml"></div>
+                                                <div class="bg-body-tertiary border px-4"><h5>Personal QR</h5></div>
+                                                <div class="bg-body-tertiary border px-4"><p class="align-items-center text-left">q5e8017e</p></div>
+                                                <div class="bg-body-tertiary border ms-auto px-4"><a href="createwhispqr.html"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1d106590903d.svg+xml"></a></div>
+                                                <div class="bg-body-tertiary border px-4"><a href="#"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1da1d590903e.svg+xml"></a></div>
+                                                <div class="bg-body-tertiary border px-4"><div class="form-check form-switch form-check-reverse">
+                                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                                                  <label class="form-check-label" for="flexSwitchCheckReverse">Enable &nbsp;</label>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
-                                    </div>
+                                      <!--End of whisp QR-->
+                                      <!--Start of Whisp button-->
+                                      <div class="row py-3">
+                                        <div class="col-sm-12">
+                                          <div class="card">
+                                            <div class="card-body">
+                                              <div class="hstack gap-3">
+                                                <div class="bg-body-tertiary border px-4"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63ada773ad0ddcb87bed41ad.svg+xml"></div>
+                                                <div class="bg-body-tertiary border px-4"><h5>Website Button</h5></div>
+                                                <div class="bg-body-tertiary border px-4"><p>f3d6072a</p></div>
+                                                <div class="bg-body-tertiary border ms-auto px-4"><a href="createfloater.html"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1d106590903d.svg+xml"></a></div>
+                                                <div class="bg-body-tertiary border px-4"><a href="#"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5e42a5aac1da1d590903e.svg+xml"></a></div>
+                                                <div class="bg-body-tertiary border px-4"><div class="form-check form-switch form-check-reverse">
+                                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+                                                  <label class="form-check-label" for="flexSwitchCheckReverse">Enable &nbsp;</label>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!--End of Whisp button-->
+                                      <!--Start of button call to action-->
+                                      <div class="col-sm-12 mb-3">
+                                        <div class="vstack gap-3 col-md-12 mx-auto d-grid-2">
+                                          <a href="createwhisp.html" role="button" class="btn btn-outline-secondary" style="padding: 20px 20px; border-radius: 15px;">Create Whisp &nbsp; <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63adb05a8b212bea10288782.svg+xml"></a>
+                                        </div>
+                                      </div>
+                                      <!--End of button call to action-->
                                     <!--End of Whisp Data list-->
                                 </div>
                             </div>

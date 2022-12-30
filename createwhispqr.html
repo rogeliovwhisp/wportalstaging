@@ -68,7 +68,7 @@
                                     <!-- Right Top Header-->
                                    <div class="row rightTopHeader pt-3 pb-3" style="background:#ffffff">
                                       <div class="col-sm-5">
-                                          <h4 class='pt-2 px-4 font-weight-bold' style="font-family:'Outfit', sans-serif;">Create a QR</h4>
+                                          <h4 class='pt-2 px-4 font-weight-bold' style="font-family:'Outfit', sans-serif;">Create a Whisp QR</h4>
                                       </div>
                                       <div class="col-sm-4">
                                           <div class="input-group mb-3">
@@ -323,7 +323,56 @@
                                                 <!-- track -->
                                                 <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
                                                     <div class="row">
-                                                        track
+                                                        <div class="col-sm-7">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <form action="">
+                                                                    <div class="row">
+                                                                            <div class="col-sm-8">
+                                                                                <p>Tracking Parameters</p>
+                                                                                <p style="font-size: 14px;">Enter parameters that map to your tracking variables</p>
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                
+                                                                                <button type="button" class="addtrack btn btn-outline-secondary">Add </button>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="row py-5">
+                                                                        <div class="col-sm-4">
+                                                                          <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Parameter</label>
+                                                                            <input type="text" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter parameter name">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputEmail1">Value</label>
+                                                                                <input type="text" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Receiving value">
+                                                                              </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <label for="exampleInputEmail1">Remove</label><br />
+                                                                            <button class="btn">
+                                                                                <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a99e7a408c0b7c92fe5c43.svg+xml">
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="pt-5 text-center center-block mb-5">
+                                                                        <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fcd2454bc6ea267f9d.svg+xml" width="">
+                                                                        <h5 class="card-title" style="font-family: 'Outfit', sans-serif;">QR Code</h5>
+                                                                        <p class="card-text" style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for print media, web pages & Social Media</p>
+                                                                    </div>
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <!-- end track -->
@@ -350,8 +399,61 @@
                                                     
                                         </div>
                                     </div>
-                            
+                                    <!--Modal Plus button-->
+                                    <div class="modal fade" id="selectwhisp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="selectwhispLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                             <div class="col-sm-9 d-block p-2">
+                                                <h1 class="modal-title fs-5" id="selectwhispLabel">Select whisp</h1>
+                                                <p class="modal-text fs-8" id="selectwhispLabel" style="color: #B8C1CC; font-family: 'Outfit', sans-serif;">Start capturing your leads through any whisp below</p>
+                                             </div>
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                            <div class="row">
+                                                <div class="col-sm-2 px-5">
+                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a22a33c53410ceffefa85d.svg+xml"/>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 style="font-family: 'Outfit', sans-serif;"><a style="text-decoration: none; color: #1b252f;" href="">Floater</a></h5>
+                                                    <p style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best website for web pages, Social Media sites</p>
+                                                </div>
+                                            </div>
+                                            <div class="row py-5">
+                                                <div class="col-sm-2 px-5">
+                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fc64cc558e9c5e03bd.svg+xml"/>
+                                                </div>
+                                                <div class="col-sm-8 px-5">
+                                                    <h5 style="font-family: 'Outfit', sans-serif;">Wheel</h5>
+                                                    <p style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for website, Home Pages</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2 px-5">
+                                                    <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a30852c534104e79f013ca.svg+xml"/>
+                                                </div>
+                                                <div class="col-sm-8 px-5">
+                                                    <h5 style="font-family: 'Outfit', sans-serif;">QR Code</h5>
+                                                    <p style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best  for print media, web pages Social Media</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!--End of Modal Plus button-->
                                 </div>
+                                <!--fix Plus button-->
+                                <div class="justify-content-end">
+                                    <button type="button " class="plusbtn btn float-end" data-bs-toggle="modal" data-bs-target="#selectwhisp" >
+                                        <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5f555408c0b610cfd8cd6.svg+xml">
+                                    </button>
+                                </div>               
+                                <!--fix position Popup Plus-->
                             </div>
                                      
                                     <!--End-->
