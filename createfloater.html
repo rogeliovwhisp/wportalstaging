@@ -18,7 +18,8 @@
     <div id="menu_screen" class="container-fluid d-flex">
         <div class="row flex-fill" style='min-height: 100vh'>
             <!-- left column -->
-        <!-- left global sidebar -->
+
+            <!-- left global sidebar -->
         <div class="col-sm-2 h-100 leftSideBar">
             <div class="row h-100" style="background:#1b252f">
                 <div class="col-sm-12">
@@ -54,6 +55,7 @@
                                   <button class="outlogin"> Logout  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
                               </div>
                             </div>
+
                       </div>
                     </div>
                 </div>
@@ -68,27 +70,29 @@
                         <div class="h-100 d-grid align-items-left justify-content-left">
                             <div class=''>
                                 <div class=''>
-                                    <div class="row" style="background: #FFFFFF;">
-                                        <div class="col-sm-6 py-3 px-4">
-                                            <h3 style="font-family:'Outfit', sans-serif;">Create a Floater</h3>
-                                        </div>
-                                        <div class="col-sm-3 py-3 px-4">
-                                            <div class="input-group mb-3">
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Select Client</option>
-                                                    <option value="1">Affiliate Partner Network</option>
-                                                    <option value="2">Canna Taxi</option>
-                                                    <option value="3">Compass Mortgage</option>
-                                                    <option value="4">Converge Marketing</option>
-                                                    <option value="5">CR Fitness</option>
-                                                    <option value="6">Credit Associates</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3 py-4">
-                                            <p id="todayis" class="h6 text-muted" style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
-                                        </div>
+                                    <!-- Right Top Header-->
+                                   <div class="row rightTopHeader pt-3 pb-3" style="background:#ffffff">
+                                    <div class="col-sm-5">
+                                        <h4 class='pt-2 px-4 font-weight-bold' style="font-family:'Outfit', sans-serif;">Create a Floater</h4>
                                     </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group mb-3">
+                                              <select class="form-select" aria-label="Default select example">
+                                                  <option selected>Select Client</option>
+                                                  <option value="1">Affiliate Partner Network</option>
+                                                  <option value="2">Canna Taxi</option>
+                                                  <option value="3">Compass Mortgage</option>
+                                                  <option value="4">Converge Marketing</option>
+                                                  <option value="5">CR Fitness</option>
+                                                  <option value="6">Credit Associates</option>
+                                              </select>
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-3 rightTopDate">                                        
+                                        <p id="todayis" class="h6 text-muted"  style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
+                                    </div>
+                                 </div>
+                                 <!-- End Right Top Header-->
 
                                     <!--start menu selector-->
                                     <div class="row text-center py-3 px-4 mt-3">
@@ -96,22 +100,22 @@
                                         <div class="col-sm-7">
                                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family: 'Outfit', sans-serif;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b8570fd8a66.svg+xml"></button>
+                                                <button class="nav-link active text-condary text-info" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-info-circle"></i> &nbsp;&nbsp;info</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1dbdc6909759.svg+xml"></button>
+                                                <button class="nav-link text-info" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-chat-dots"></i>&nbsp;&nbsp;SMS</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effcad0ddcf2a0ea5b17.svg+xml"></button>
+                                                <button class="nav-link text-info" id="pills-style-tab" data-bs-toggle="pill" data-bs-target="#pills-style" type="button" role="tab" aria-controls="pills-style" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-palette"></i>&nbsp;&nbsp;Style</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc408c0b6edefd8a65.svg+xml"></button>
+                                                <button class="nav-link text-info" id="pills-track-tab" data-bs-toggle="pill" data-bs-target="#pills-track" type="button" role="tab" aria-controls="pills-track" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-bookmark"></i>&nbsp;&nbsp;Track</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d3f92909758.svg+xml"></button>
+                                                <button class="nav-link text-info" id="pills-integrate-tab" data-bs-toggle="pill" data-bs-target="#pills-integrate" type="button" role="tab" aria-controls="pills-integrate" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-share"></i>&nbsp;&nbsp;Integrate</button>
                                               </li>
                                               <li class="nav-item" role="presentation">
-                                                <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5effc5aac1d22bc909757.svg+xml"></button>
+                                                <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false" style="font-family: 'Outfit', sans-serif;"><i class="bi bi-code-slash"></i>&nbsp;Code</button>
                                               </li>
                                             </ul>
 
@@ -354,10 +358,10 @@
                                                                                 </div>
                                                                                 <div class="col-sm-4">
                                                                                     
-                                                                                    <button type="button" class="btn btn-outline-secondary">Add </button>
+                                                                                    <button type="button" class="addtrack btn btn-outline-secondary">Add </button>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row">
+                                                                            <div class="row py-5">
                                                                                 <div class="col-sm-4">
                                                                                   <div class="form-group">
                                                                                     <label for="exampleInputEmail1">Parameter</label>
@@ -372,7 +376,9 @@
                                                                                 </div>
                                                                                 <div class="col-sm-4">
                                                                                     <label for="exampleInputEmail1">Remove</label><br />
-                                                                                    <button class="btn btn-outline-secondary mt-3"><i class="fa fa-trash"></i></button>
+                                                                                    <button class="btn">
+                                                                                        <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a99e7a408c0b7c92fe5c43.svg+xml">
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>                                                        
                                                                         </div>  
@@ -642,7 +648,7 @@
                                                                                     </script>   
                                                                             </div>
                                                                             <div class="row py-4">
-                                                                                <div class="col-md-8">
+                                                                                <div class="col-md-7">
                                                                                     <div class="card rounded" >
                                                                                         <div class="card-body">
                                                                                             <div class="row">
@@ -676,7 +682,7 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-sm-3">
+                                                                                <div class="col-sm-4">
                                                                                     <div class="d-grid gap-2">
                                                                                         <a class="btn btn-light" href="javascript:void(0)" id="copyButton">
                                                                                             Copy Code 
@@ -740,10 +746,7 @@
                                                     </div>
                                                 </div>
                                                 <!--  end code -->
-                                                <!--plus pop up overall-->
-                                               
-
-  
+                                                <!--plus pop up overall--> 
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="selectwhisp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="selectwhispLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
@@ -763,7 +766,7 @@
                                                                 <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a22a33c53410ceffefa85d.svg+xml"/>
                                                             </div>
                                                             <div class="col-sm-8 px-5">
-                                                                <h5 style="font-family: 'Outfit', sans-serif;"><a style="text-decoration: none; color: #1b252f;" href="">Floater</a></h5>
+                                                                <h5 style="font-family: 'Outfit', sans-serif;"><a style="text-decoration: none; color: #1b252f;" href="createfloater.html">Floater</a></h5>
                                                                 <p style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best website for web pages, Social Media sites</p>
                                                             </div>
                                                         </div>
@@ -772,7 +775,7 @@
                                                                 <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fc64cc558e9c5e03bd.svg+xml"/>
                                                             </div>
                                                             <div class="col-sm-8 px-5">
-                                                                <h5 style="font-family: 'Outfit', sans-serif;">Wheel</h5>
+                                                                <h5 style="font-family: 'Outfit', sans-serif;"><a style="text-decoration: none; color: #1b252f;" href="createwhispwheel.html">Wheel</a></h5>
                                                                 <p style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best for website, Home Pages</p>
                                                             </div>
                                                         </div>
@@ -781,7 +784,7 @@
                                                                 <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a30852c534104e79f013ca.svg+xml"/>
                                                             </div>
                                                             <div class="col-sm-8 px-5">
-                                                                <h5 style="font-family: 'Outfit', sans-serif;">QR Code</h5>
+                                                                <h5 style="font-family: 'Outfit', sans-serif;"><a style="text-decoration: none; color: #1b252f;" href="createwhispqr.html">QR Code</a></h5>
                                                                 <p style="font-family: 'Outfit', sans-serif; color: #B8C1CC;">Best  for print media, web pages Social Media</p>
                                                             </div>
                                                         </div>
