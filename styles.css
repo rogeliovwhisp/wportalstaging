@@ -22,6 +22,11 @@ body{
       background-color: #36414C;
       color:  #ffffff;
     }
+
+    .leftSideBar .leftNavigation .active a {
+      background-color: #36414C;
+      color:  #ffffff;
+    }
 /*END left global side bar*/
 
 /*Right Top Header*/
