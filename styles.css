@@ -66,6 +66,21 @@ body{
     #pagination-container-clients ul li:hover { opacity: .8; }
 /*END paginations client page*/
 
+/*Dashboard Page*/
+  .percenttext {
+    font-size: 13px;
+    color: #84D5A7;
+    padding-right: 16px;
+    padding-top: 32px;
+  }
+  .percenttext_red{
+    font-size: 13px;
+    color: #D26A6A;
+    padding-right: 16px;
+    padding-top: 32px;
+  }
+/*End of Dashboard Page*/
+
 /*clients page*/
 .clientsTable tr {
   background:  #ffffff;
@@ -304,6 +319,19 @@ button.btn.btn-dark.px-4{
 }
 .uploadcsv::after{
   content: url('https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5c797408c0b4a4bfd6ee4.svg+xml') !important;
+}
+
+.MU_PageBg .cAname  {
+  background: rgb(54 65 76);
+  color: #B8C1CC;
+  font-size: 20px;
+  border-radius: 50px;
+  float: right;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 20px;
 }
 
 .importuser{
