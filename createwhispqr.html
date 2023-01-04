@@ -10,8 +10,11 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!--Filterable & Checkable multi-select dropdown-->
+      <script src="multiselect-dropdown.js" ></script>
+      <!--Filterable & Checkable multi-select dropdown-->
 </head>
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
@@ -504,7 +507,7 @@
                                                                         <p class="h6 ext-center text-secondary" style="font-family: 'Outfit', sans-serif;">Configure</p>
                                                                     </div>
                                                                     <hr class=" col-sm-8 px-4 center-block"  style=" margin-left: 25px; align-items: center; width: 30rem;"/>
-                                                                    
+                                                                    <!--integration list data-->
                                                                     <div class="col-sm-7 px-4">
                                                                         <p class="h6" style="font-family: 'Outfit', sans-serif;">Lead Conduit</p>
                                                                     </div>
@@ -518,6 +521,34 @@
                                                                             <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5f7925aac1d018e909b33.svg+xml">
                                                                         </button>
                                                                     </div>
+
+                                                                    <div class="col-sm-7 px-4">
+                                                                        <p class="h6" style="font-family: 'Outfit', sans-serif;">Popl</p>
+                                                                    </div>
+                                                                    <div class="col-sm-2 px-4">
+                                                                       <button type="button" data-bs-toggle="modal" data-bs-target="#clientsModal" class="btn btn-outline-secondary" style="outline: none; border: none;">
+                                                                         <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5f84a408c0b72c4fd8e4c.svg+xml">
+                                                                       </button>
+                                                                    </div>
+                                                                    <div class="col-sm-2 px-4 text-center">
+                                                                        <button type="button" class="btn border">
+                                                                            <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5f7925aac1d018e909b33.svg+xml">
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="col-sm-7 px-4">
+                                                                        <p class="h6" style="font-family: 'Outfit', sans-serif;">My Agent Connector</p>
+                                                                    </div>
+                                                                    <div class="col-sm-2 px-4">
+                                                                       <button type="button" data-bs-toggle="modal" data-bs-target="#clientsModal" class="btn btn-outline-secondary" style="outline: none; border: none;">
+                                                                         <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5f84a408c0b72c4fd8e4c.svg+xml">
+                                                                       </button>
+                                                                    </div>
+                                                                    <div class="col-sm-2 px-4 text-center">
+                                                                        <button type="button" class="btn border">
+                                                                            <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5f7925aac1d018e909b33.svg+xml">
+                                                                        </button>
+                                                                    </div>
+                                                                    <!--End of Integration list data-->
                                                                 </form>  
                                                                 <!--End Affiliate integration-->
                                                             </div>
@@ -535,7 +566,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                    
+                                                
                                                 <!-- end integrate -->
 
                                                 <!-- code -->
@@ -598,6 +629,79 @@
                                         </div>
                                     </div>
                                     <!--End of Modal Plus button-->
+
+                                    <!--Data list Modal-->
+                                    <!--Configure Popup-->
+                                    <div class="modal fade" id="clientsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title text-left" id="exampleModalLabel">Configure Options</h5> <br>
+                                              <div class="col-sm-6">
+                                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                    <button type="button" class="confgbtn btn btn-light float-end" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button" class="confgbtn1 btn btn-dark float-end">Save</button>
+                                                </div>
+                                              </div>
+                                              
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="py-2" for="usr">Send this Data</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>When SMS text is sent</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <label class="py-2" for="usr">Content Format</label> 
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>JSON</option>
+                                                        <option value="1">JavaScript/Jquery</option>
+                                                        <option value="2">Curl</option>
+                                                        <option value="3">PHP</option>
+                                                        <option value="4">Phyton</option>
+                                                        <option value="5">Laravel</option>
+                                                    </select>
+                                                    <label class="py-2" for="usr">API URL</label>
+                                                    <input type="text" class="form-control" id="url" placeholder="https://">
+                                                    
+                                                    <label class="py-2" for="usr">API Key</label>
+                                                    <input type="text" class="form-control" id="apikey" placeholder="***************************">
+                                                </div>
+
+                                                <div class="col-sm-2 left-block py-3 d-flex">
+                                                    <p class="h6 px-4">Parameters</p>
+                                                    <img  width='20' height='20' data-bs-placement="right"  data-bs-html="true" data-bs-toggle="tooltip" title="<br>STEPS<br>1.Full Name <br>2. Email <br>3. Phone<br><br>4. City<br>5. Website<br>6. State<br><br>" src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a29a37d2454b9c2a2647a8.png' />
+                                                
+                                                    <script>
+                                                        // Initialize tooltips
+                                                        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                                                        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                                                          return new bootstrap.Tooltip(tooltipTriggerEl)
+                                                        })
+                                                    </script> 
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control form-control-lg" type="text" >
+                                                    <select class="form-select mt-3" multiple aria-label="multiple select example" name="tags" id="tags" multiselect-search="true">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+
+                                                    </select>
+                                                </div>
+                                              </div>
+                                             
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!--End Configure-->
+                                    <!--End of Data list Modal-->
                                 </div>
                                 <!--fix Plus button-->
                                 <div class="justify-content-end">

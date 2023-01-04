@@ -471,6 +471,7 @@ padding: 10px 40px 10px 40px;
 /*End of New Campaign & Edit Campaign*/
 
 /*Start Client profile*/
+
 .stack-title{
   background: #FFFFFF !important;
   border-radius: 15px;
@@ -494,6 +495,70 @@ padding: 10px 40px 10px 40px;
 .selectcamp{
   font-weight: 100;
 }
+
+/*circular progress bar*/
+.circle-wrap {
+  margin: 5px auto;
+  width: 80px;
+  height: 80px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 83px, 58px, 51px);
+}
+
+.circle-wrap .inside-circle {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 64px;
+  text-align: center;
+  margin-top: 9px;
+  margin-left: 9px;
+  color: #1b252f;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 83px, 58px, 51px);
+  background-color:  #36414c !important;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+ 
+/*circular progress bar*/
+
 /*End of Client profile*/
 
 /*Global tab function adjustment*/
