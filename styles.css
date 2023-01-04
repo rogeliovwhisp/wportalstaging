@@ -121,12 +121,13 @@ button.btn.btn-dark.px-4{
 }
 .clientsPageSelect {
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
     border: solid 1px #e7dddd;
     margin-left: -10px;
     margin-right: 10px;
     color: #66737F;
     padding-bottom: 15px;
+    padding-left: 10px;
 }
 .clientsPageSelect .selectAll {
   float:  right;
@@ -135,6 +136,13 @@ button.btn.btn-dark.px-4{
 .clientsPageSelect input {
   margin-left:  5px !important;
   float: right;
+}
+.clientsPageSelectCname {
+  padding-left: 20px;
+}
+.clientsPageSelectAction {
+  text-align: right;
+  padding-right: 15px;
 }
 .clientsPageBg .buttn {
   text-align:  right;
