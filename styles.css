@@ -30,6 +30,9 @@ body{
 /*END left global side bar*/
 
 /*Right Top Header*/
+    .rightTopHeader {
+      background: #ffffff;
+    }
     .rightTopHeader h4 {
       font-weight: bold;
         color: #1B252F;
@@ -62,7 +65,7 @@ body{
     #pagination-container-clients ul .active { background:  unset; color:  #000000;}
     #pagination-container-clients ul .active:first-child { background: unset; color: #d9cdcd; }
     #pagination-container-clients ul li:last-child { background:  unset;  color: #d9cdcd; }
-    #pagination-container-clients {  padding-bottom: 100px; }
+    #pagination-container-clients {  padding-bottom: 0px; }
     #pagination-container-clients ul li:hover { opacity: .8; }
 /*END paginations client page*/
 
@@ -122,7 +125,7 @@ button.btn.btn-dark.px-4{
 .clientsPageSelect {
     background: #ffffff;
     border-radius: 10px;
-    border: solid 1px #e7dddd;
+    border: solid 0px #e7dddd;
     margin-left: -10px;
     margin-right: 10px;
     color: #66737F;
@@ -325,6 +328,7 @@ button.btn.btn-dark.px-4{
   outline-style: dashed !important;
   padding: 40px 100px 40px 100px;
 }
+
 .uploadcsv::after{
   content: url('https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5c797408c0b4a4bfd6ee4.svg+xml') !important;
 }
@@ -338,9 +342,26 @@ button.btn.btn-dark.px-4{
   width: 50px;
   height: 50px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
   margin-right: 20px;
 }
+
+.MU_PageBg .mUsersEdit span{
+  padding-right: 10px;
+}
+
+.MU_PageBg .mUsersEdit a {
+  text-decoration: none;
+  color: #666262;
+ 
+
+}
+
+.MU_PageBg .mUsersEdit a:hover {
+  text-decoration: underline;
+}
+
+
 
 .importuser{
   border-radius: 15px !important;
