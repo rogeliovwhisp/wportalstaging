@@ -4,7 +4,15 @@
 body{
   font-family: 'Outfit', sans-serif;
 }
+
+label, p, a, button {
+  font-family: 'Outfit', sans-serif;
+}
 /*Left global side bar*/
+    .leftNavigationWrap .bi-person::before {
+      font-size: 18px;
+    }
+
     .leftSideBar .leftNavigationWrap {
       margin:  0px !important;
       padding:  0px !important;
@@ -251,14 +259,50 @@ button.btn.btn-dark.px-4{
 }
 
 .outlogin {
-  background-color: #2b3540;
-  color: #e7e6e6;
-  border-radius: 15px;
-  padding: 12px 60px 12px 60px;
-  border: none;
-  outline: none;
-  justify-content: space-between;
+    background-color: #2b3540;
+    color: #e7e6e6;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    justify-content: space-between;
+    width: 80%;
 }
+
+.outlogin span {
+  float: left;
+  color: #E7ECF2 !important;
+  font-weight: normal;
+}
+
+.outlogin img {
+    float: right;
+    padding-top: 6px;
+}
+
+.leftSideBar .ccposition {
+    color: #89929d;
+    font-size: 14px;
+}
+
+.leftSideBar .cname {
+    color: #ffffff;
+    display: block;
+    line-height: 1em;
+}
+
+.leftSideBar .dropdown-toggle::after {
+    display: block;
+    color: #89929d !important;
+    float: right;
+    margin-left: 45px;
+    margin-top: -10px;
+}
+
+.leftSideBar .me-2 {
+    margin-top: -25px;
+}
+ 
 
 #menu_screen > div > div.col-sm-2.h-100 > div > div > div > div > div:nth-child(3) > div > div > a > img{
   border-radius: 7%!important;
@@ -1089,6 +1133,137 @@ padding: 10px 40px 10px 40px;
 }
 
 /*End of Custom Dropdown*/
+
+/*login lef*/
+.loginLeft h5, .loginRight h5 {
+  font-size: 30px;
+}
+
+.loginRight .email input, .loginRight .password input{
+  width: 299px !important;
+  height: 44px;
+  font-size: 16px;
+  color: gray;
+}
+
+.loginRight label {
+  font-size: 15px;
+  font-weight: 300;
+  color: #FAFCFD;
+}
+
+.loginLeft .logo {
+  width: 336px;
+  height: 117px;
+}
+
+.bi-eye-slash-fill::before {
+  color: #B8C1CC !important;
+}
+
+.loginRight label {
+  font-size: 15px;
+}
+
+.loginRight button {
+  width: 221px;
+  height: 44px;
+  font-weight: 100;
+  font-size: 15px;
+  margin-left: 45px;
+}
+
+.loginRight .rememberme span {
+  padding-left: 20px;
+  color: #FAFCFD;
+}
+
+.loginRight .forgot a {
+  text-decoration: none;
+  color: #B8C1CC !important;
+}
+
+.loginRight .forgot a:hover {
+  text-decoration: underline;
+}
+
+.loginRight .donthave {
+  padding-left: 46px;
+  font-weight: 100;
+}
+
+.loginRight .donthave a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.forgotpass h4 {
+  font-size: 30px;
+
+}
+
+.forgotpass .h6 {
+  line-height: 2em;
+}
+
+.forgotpass .h6, .forgotpass label {
+  color: #E7ECF2 !important;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.forgotpass input, .forgotpass button {
+  width: 302px;
+  height: 44px;
+}
+
+.forgotpass button {
+  color: #E7ECF2;
+  font-weight: 100;
+}
+
+.forgotpass p a {
+  font-size: 14px;
+  color: #B8C1CC !important;
+  font-weight: 100;
+}
+
+.forgotpassLeft img {
+  width: 336px;
+  height: 117px;
+}
+
+.signupLeft img {
+  width: 336px;
+  height: 117px;
+}
+
+.signupRight h5 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.signupRight label {
+  color: #E7ECF2 !important;
+  font-size: 15px;
+  font-weight: normal !important;
+  font-weight: 300;
+}
+
+.signupRight .cancel {
+    text-decoration: none;
+    border: solid 1px #6a6464;
+    width: 150px;
+    /* height: 50px; */
+    display: block;
+    border-radius: 50px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+.signupRight input {
+  border-radius: 50px;
+}
 
 /*End of Create a Whisp QR*/
 

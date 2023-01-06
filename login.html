@@ -19,13 +19,13 @@
     <div class="row flex-fill" style='min-height: 100vh'>
 
         <!-- left column -->
-        <div class="col-sm-5 h-100">
+        <div class="col-sm-5 h-100 loginLeft">
             <div class="row h-100" style="background:#1b252f">
                 <div class="col-sm-12">
                     <div class="h-100 d-flex align-items-center justify-content-center">
                       <div class=''>
                         <h5 class='text-white display-6 pb-3'>Welcome to</h5>
-                        <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' width="350"/>
+                        <img class="logo" src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/6393e3186f63cd7e2f594748.png' />
                       </div>
                     </div>
                 </div>
@@ -33,20 +33,20 @@
         </div>
 
         <!-- right column -->
-        <div class="col-sm-7 h-100">
+        <div class="col-sm-7 h-100 loginRight">
           <div class="row h-100" style="background:#36414c">
                 <div class="col-sm-12">
                     <div class="h-100 d-grid align-items-center justify-content-left">
-                      <div class='px-5'>
+                      <div class='px-3'>
                           <div class='px-5'>
                             <h5 class='text-white display-6 pb-3'>Log in</h5>
                             <form>
                               <div class="row">
-                                <div class="col">
+                                <div class="col email">
                                   <label for="email" class="form-label text-white">Your Email:</label>
                                   <input type="email" class="form-control rounded-5 py-2" placeholder="Enter email" name="email" required>
                                 </div>
-                                <div class="col">
+                                <div class="col password">
                                     <label for="password" class="form-label text-white">Password:</label>
                                     <div class="input-group-text" id="show_hide_password" style="background-color: transparent !important; border: unset !important; padding: unset !important;">
                                       <input type="password" class="form-control rounded-5 py-2" placeholder="Enter password" name="pswd" id="password" required>
@@ -58,17 +58,17 @@
 
                               <div class="row pt-3" style="padding-left: 3rem; width: 51%;">
                                 <div class="col">
-                                  <label class="form-check-label text-white">
-                                    <input class="form-check-input text-white" type="checkbox" name="remember"> Remember me
+                                  <label class="form-check-label text-white rememberme">
+                                    <input class="form-check-input text-white" type="checkbox" name="remember"> <span>Remember me</span>
                                   </label>
                                 </div>
-                                <div class="col">
+                                <div class="col forgot">
                                    <label class="form-label text-white"><a href="forgotPwd.html" class='text-white'>Forgot Password</a></label>
                                 </div>
                               </div>
-                              <button type="submit" class="btn text-white mt-3 rounded-5 px-5 py-2 btn-dark" style="margin-left: 45px;">Sign In</button>
-                              <p class='text-white pt-3' style="padding-left: 46px;">
-                                Don't you have an account? <a href="signup.html" class='text-white' style="text-decoration: none;">Sign Up</a>
+                              <button type="submit" class="btn text-white mt-3 rounded-5 px-5 py-2 btn-dark">Log In</button>
+                              <p class='text-white pt-3 donthave'>
+                                Don't you have an account? <a href="signup.html" class='text-white'>Sign Up</a>
                               </p>
                             </form>
                         </div>
