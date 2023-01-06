@@ -269,6 +269,10 @@ button.btn.btn-dark.px-4{
     width: 80%;
 }
 
+.outlogin:hover {
+  opacity: .8;
+}
+
 .outlogin span {
   float: left;
   color: #E7ECF2 !important;
