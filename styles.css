@@ -22,13 +22,19 @@ label, p, a, button {
     }
     .leftSideBar .leftNavigation li a{
       color:  #8F9CA9;
-      width: 100%;
+      width: 90%;
       display:  block;
-      padding:  5px 0px 5px 15%;
+      /* padding:  5px 0px 5px 15%; */
+      padding: 11px 0px 11px 15%;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
     }
     .leftSideBar .leftNavigation li a:hover {
       background-color: #36414C;
+      width: 90%;
       color:  #ffffff;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
     }
 
     .leftSideBar .leftNavigation .active a {
@@ -54,6 +60,8 @@ label, p, a, button {
       background-position: 10px 50%;
       padding-left: 45px;
       color: #b6c1cd;
+      border-radius: 15px !important;
+      font-size: 14px;
     }
     .rightTopDate {
       color: #8F9CA9;
@@ -84,6 +92,10 @@ label, p, a, button {
 /*End of Login page*/
 
 /*Dashboard Page*/
+.dashleads {
+  color: #B8C1CC; 
+  font-size: 15px;
+}
   .percenttext {
     font-size: 13px;
     color: #84D5A7;
@@ -96,9 +108,19 @@ label, p, a, button {
     padding-right: 10px;
     padding-top: 32px;
   }
+
+  .dashsubtitle{
+    font-size: 26px; 
+    color: #36414C
+  }
 /*End of Dashboard Page*/
 
 /*clients page*/
+.newclient{
+  background-color: #36414c;
+  border-radius: 10px;
+}
+
 .clientsTable tr {
   background:  #ffffff;
 }
@@ -132,6 +154,11 @@ button.btn.btn-dark.px-4{
   font-size: 16px;
   padding: 8px 40px 8px 40px;
   border-radius: 15px;
+}
+.clients_ctacancel{
+  background-color: #FFFFFF;
+  border: #ADB9C7 solid 1px;
+  color: #ADB9C7;
 }
 .clients_ctasave{
   background-color: #36414C !important;
@@ -455,7 +482,8 @@ button.btn.btn-dark.px-4{
   background-color: #FFFFFF !important;
 }
 .cf_btn{
-  font-weight: 100; padding-left: 40px; padding-right: 40px; font-size: 16px;
+  width: 176px; height: 48px;
+  font-weight: 100;  font-size: 16px;
 }
 .cf_browse{
   padding: 7px 35px 7px 35px;
@@ -464,7 +492,8 @@ button.btn.btn-dark.px-4{
 
 /*Create Whisp Wheel*/
 .cw_btn{
-  font-weight: 100; padding-left: 40px; padding-right: 40px; font-size: 16px;
+  width: 176px; height: 48px;
+  font-weight: 100;  font-size: 16px;
 }
 .cw_browse{
   padding: 7px 35px 7px 35px;
@@ -534,14 +563,20 @@ padding: 10px 40px 10px 40px;
 /*New Campaign & Edit Campaign*/
 .NC_cta_Cancel,
 .EC_cta_Cancel{
-  border-radius: 15px;
-  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  width: 110px;
+height: 40px;
 }
 
 .NC_cta_Save,
 .EC_cta_Save{
-  border-radius: 15px;
-  padding: 10px 30px 10px 30px;
+border-radius: 10px;
+width: 110px;
+height: 40px;
+}
+
+#inputState span.select2.select2-container.select2-container--default.select2-container--focus{
+  width: 491.078px !important;
 }
 /*End of New Campaign & Edit Campaign*/
 
@@ -571,184 +606,74 @@ padding: 10px 40px 10px 40px;
   font-weight: 100;
 }
 
-/*2nd phase of circular Progress bar*/
-.progress-circle {
-  font-size: 20px;
-  margin: 9px;
-  position: relative; /* so that children can be absolutely positioned */
-  padding: 0;
-  width: 5em;
-  height: 5em;
-  background-color: #F2E9E1; 
-  border-radius: 50%;
-  line-height: 5em;
-}
-
-.progress-circle:after{
-   border: none;
-   position: absolute;
-   top: 0.35em;
-   left: 0.35em;
-   text-align: center;
-   display: block;
-   border-radius: 50%;
-   width: 4.3em;
-   height: 4.3em;
-   background-color: white;
-   content: " ";
-}
-/* Text inside the control */
-.progress-circle span {
-   position: absolute;
-   line-height: 5em;
-   width: 5em;
-   text-align: center;
-   display: block;
-   color: #53777A;
-   z-index: 2;
-}
-.left-half-clipper { 
-  /* a round circle */
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
-  position: absolute; /* needed for clipping */
-  clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/ 
-}
-/* when p>50, don't clip left half*/
-.progress-circle.over50 .left-half-clipper {
-  clip: rect(auto,auto,auto,auto);
-}
-.value-bar {
-  /*This is an overlayed square, that is made round with the border radius,
-  then it is cut to display only the left half, then rotated clockwise
-  to escape the outer clipping path.*/ 
-  position: absolute; /*needed for clipping*/
-  clip: rect(0, 2.5em, 5em, 0);
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-  border: 0.45em solid #53777A; /*The border is 0.35 but making it larger removes visual artifacts */
-  /*background-color: #4D642D;*/ /* for debug */
-  box-sizing: border-box;
- 
-}
-/* Progress bar filling the whole right half for values above 50% */
-.progress-circle.over50 .first50-bar {
-  /*Progress bar for the first 50%, filling the whole right half*/
-  position: absolute; /*needed for clipping*/
-  clip: rect(0, 5em, 5em, 2.5em);
-  background-color: #53777A;
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
-}
-.progress-circle:not(.over50) .first50-bar{ display: none; }
 
 
-/* Progress bar rotation position */
-.progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-.progress-circle.p10 .value-bar { transform: rotate(36deg); }
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
-.progress-circle.p70 .value-bar { transform: rotate(252deg); }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); }
-.progress-circle.p99 .value-bar { transform: rotate(356deg); }
-.progress-circle.p100 .value-bar { transform: rotate(360deg); }
-/*2nd phase of circular Progress bar*/
+/*3rd Phase circular progress*/
+.progress {
+  width: 69px;
+  height: 69px;
+  font-size: 15px;
+  color: rgb(4, 4, 4);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: #FFFFFF;
+  text-align: center;
+  line-height: 71px;
+  
+}
+
+.progress::after {content: "%";}
+
+.progress .title {position: relative;z-index: 100; margin-left: 19px;}
+
+.progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #FFFFFF
+}
+
+.progress .left, .progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #222235;
+    border-radius: 100px 0px 0px 100px;
+    border-right: 0;
+    transform-origin: right;
+}
+
+.progress .left {animation: load1 1s linear forwards;}
+
+.progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
+
+.progress:last-of-type .right, .progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+
+@keyframes load1 {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(180deg);}
+}
+
+@keyframes load2 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {z-index: 100;transform: rotate(270deg);}
+}
+
+@keyframes load3 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {
+        z-index: 100;transform: rotate(315deg);}
+}
+/*End of 3rd Phase circular progress*/
 
 
 /*End of Client profile page*/
@@ -785,6 +710,54 @@ padding: 10px 40px 10px 40px;
 }
 /*End of Global Radio button Mark color*/
 
+/*Global Signout Sidebar button*/
+ul.dropdown-menu.text-small.shadow.show{
+  margin-bottom: 19px;
+  background-color: #2b3540;
+  color: #000000;
+}
+
+.dropdown-item{
+  color: #000000;
+}
+/* End of Global Signout Sidebar button*/
+
+/*Global Select Element style*/
+#clients, #select2-clients-container,
+.select2-container--default .select2-selection--single {
+  border-radius: 8px !important;
+}
+span#select2-clients-container{
+  margin-top: 3px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 6px !important;
+}
+.select2-container .select2-selection--single{
+  height: 38px !important;
+}
+/*End of Globel Select Element style*/
+
+/*Global Text area element Color Scheme*/
+.msgtext,.msgreply, .msg2ndreply{ border: none; height: 100px;}
+.msgtext{
+  
+  background: #EEF2F6;
+}
+
+.msgreply{
+  
+background: #D5DDE5;
+}
+
+.msg2ndreply{
+  
+  background: #D5DDE5;
+}
+/*End of Global Text area element Color Scheme*/
 
 /*Create QR page*/
 .createqrpage .nav-pills .nav-link {
@@ -1275,4 +1248,11 @@ padding: 10px 40px 10px 40px;
 .cw_button, .cf_bttn, .cqr_button {
     font-size: 10px !important;
   }
+
+  .msgreply, .msg2ndreply{
+    width: 349px;
+    margin-left: 38px;
+ 
+  }
+  
 }
