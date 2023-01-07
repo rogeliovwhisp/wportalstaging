@@ -111,7 +111,23 @@ label, p, a, button {
 
   .dashsubtitle{
     font-size: 26px; 
-    color: #36414C
+    color: #36414C;
+    font-weight: 500 !important;
+    padding-bottom: 20px;
+  }
+
+.dashsubtitle2{
+    font-size: 20px; 
+    color: #36414C;
+    font-weight: 500 !important;
+  }
+
+
+  .dashsubtitleBottom{
+    font-size: 20px; 
+    color: #36414C;
+    font-weight: 500 !important;
+    padding-bottom: 20px;
   }
 /*End of Dashboard Page*/
 
