@@ -129,6 +129,11 @@ label, p, a, button {
     font-weight: 500 !important;
     padding-bottom: 20px;
   }
+
+  #myChartBar{
+    width:100%;
+    height: auto;
+  }
 /*End of Dashboard Page*/
 
 /*clients page*/
@@ -255,7 +260,9 @@ button.btn.btn-dark.px-4{
 .clientsPageBtnCancel button{
   background: red !important;
 }
-/*clients page*/
+/*end of clients page*/
+
+
 
 /*Account Settings Page*/
 
@@ -378,16 +385,20 @@ button.btn.btn-dark.px-4{
   font-weight: 100 !important;
 }
 
-#v-pills-disabled > div > div > div > div > div > button.btn.btn-secondary {
-  background-color: #1B252F !important;
+.accntbtnsetting{
+  background-color: #36414c !important;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  
+}
+.accntsettingbtn {
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
 }
 
-#v-pills-disabled > div > div > div > div > div > button.btn.btn-secondary,
-#v-pills-disabled > div > div > div > div > div > button.btn.btn-outline-secondary.me-md-2{
-  border-radius: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
+
 #v-pills-disabled > div > div > div > div > div > button.btn.btn-outline-secondary.me-md-2:hover span{
   display: none !important;
 }
@@ -402,9 +413,35 @@ button.btn.btn-dark.px-4{
  color: #1B252F !important;
 }
 
-/*Account Settings Page*/
+.input-one{
+  width: 40%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.input-two{
+  width: 30%;
+}
+
+.input-three{
+    width: 30%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 45px;
+}
+
+
+
+/*End of Account Settings Page*/
 
 /*Manage Users*/
+.btninviteuser{
+ background-color: #36414c;
+ width: 126px;
+ height: 44px;
+ border-radius: 10px;
+}
+
 .MU_leftnav a{
   color:  #8F9CA9;
   width: 100%;
@@ -414,7 +451,6 @@ button.btn.btn-dark.px-4{
 
 .MU_leftnav a:hover{
   background-color: #36414C;
-  /* border-radius: 15px; */
   color:  #ffffff;
 }
 
@@ -480,7 +516,7 @@ button.btn.btn-dark.px-4{
 .mu_cancel,
 .mu_save{
   padding: 10px 40px 10px 40px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .mu_save{
@@ -555,15 +591,16 @@ padding: 10px 40px 10px 40px;
   background: #ede6e6 !important;
   color: #b4bfcc;
   border: 0px;
-  padding: 8px 15px !important;
+  width: 110px;
+  height: 40px;
   border-radius: 10px;
 } 
 
 .clientsPageBtnSave {
   background: #36414c !important;
-  color: #b4bfcc;
   border: 0px;
-  padding: 8px 15px;
+  width: 110px;
+  height: 40px;
   border-radius: 10px;
   color: #ffffff;
 }
@@ -598,6 +635,10 @@ height: 40px;
 
 /*Start Client profile*/
 
+.cardstack{
+  margin-right: 17px;
+}
+
 .stack-title{
   background: #FFFFFF !important;
   border-radius: 15px;
@@ -616,15 +657,15 @@ height: 40px;
   color: #FFFFFF;
   border-radius: 13px;
   padding: 10px 35px 10px 35px;
-  background-color: #1B252F;
+  background-color: #36414c;
 }
 .selectcamp{
-  font-weight: 100;
+  width: 272px;
 }
 
 
 
-/*3rd Phase circular progress*/
+/*circular progress*/
 .progress {
   width: 69px;
   height: 69px;
@@ -689,7 +730,7 @@ height: 40px;
     100% {
         z-index: 100;transform: rotate(315deg);}
 }
-/*End of 3rd Phase circular progress*/
+/*End of circular progress*/
 
 
 /*End of Client profile page*/
@@ -733,8 +774,37 @@ ul.dropdown-menu.text-small.shadow.show{
   color: #000000;
 }
 
+/*Global textbox radius*/
+.form-control{
+  border-radius: 10px;
+  font-size: 14px;
+  height: 45px;
+}
+.form-check-label{
+  font-size: 14px;
+}
+.form-check-input{
+  border-radius: 10px;
+}
+.input-group-text{
+  background-color: transparent !important;
+}
+/*End of Global textbox radius*/
+
+/*Global Select Element */
+.form-select {
+  font-size: 14px;
+  border-radius: 10px;
+  height: 45px;
+}
+/*end of Global Select Element */
+
 .dropdown-item{
-  color: #000000;
+  color: #36414c;
+}
+
+.userdrpinfo{
+  color: #FFFFFF;
 }
 /* End of Global Signout Sidebar button*/
 
@@ -1263,6 +1333,7 @@ background: #D5DDE5;
 @media screen and (max-width: 1400px) and (min-width: 1300px){
 .cw_button, .cf_bttn, .cqr_button {
     font-size: 10px !important;
+    background-color: #36414C;
   }
 
   .msgreply, .msg2ndreply{

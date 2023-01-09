@@ -49,8 +49,8 @@
                                     <p><span class="cname">John Doe</span><span class="ccposition">administrator</span></p>
                                     </a>
                                     <ul class="dropdown-menu text-small shadow">
-                                      <li><a class="dropdown-item" href="#">Settings</a></li>
-                                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                                      <li><a class="userdrpinfo dropdown-item" href="#">Settings</a></li>
+                                      <li><a class="userdrpinfo dropdown-item" href="#">Profile</a></li>
                                     </ul>
                                   </div>
                                   <button class="outlogin"> <span>Logout</span>  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
@@ -108,7 +108,7 @@
                                                     Client Name
                                                   </div>
                                                   <div class="col-sm-2 buttn clientsPageSelectAction">
-                                                    <button type="button" class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#modalInviteUser">Invite User</button>
+                                                    <button type="button" class="btninviteuser btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalInviteUser">Invite User</button>
                                                   </div>
                                                 </div>
                                               </div>
@@ -485,7 +485,7 @@
                               <!-- Modal INVITE USER -->
                               <div class="modal fade" id="modalInviteUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
-                                  <div class="inviteuser modal-content">
+                                  <div class="inviteuser modal-content" style="width: 618px;">
                                     <div class="modal-header">
                                       <h5 class="modal-title" id="exampleModalLabel">Send Invite</h5>
                                       <button type="button" class="invite_user btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -517,14 +517,12 @@
                                           </select>
                                         </div>
                                       </div>
-                                      <div class="row pt-3 px-5">
-                                        <div class="col-md-9 px-4">
-                                            <label for="">Select Campaign For the User</label>                                        
+                                      <div class="row pt-3">
+                                        <div class="col-md-7 px-4" style="margin-right: 32px;">
+                                           <p class="text-left">Select Campaign For the User</p>                                        
                                         </div>
-                                        <div class="col-md-2 px-3">
-                                            <label for="">Select All</label>                                        
-                                        </div>
-                                        <div class="col-md-1 mb-3">
+                                        <div class="col-md-4 px-3 float-end" style="text-align: right;">                                        
+                                            <label for="form-check">Select All</label> &nbsp;
                                             <input class="form-check-input" type="checkbox" value="" id="">
                                         </div>
                                       </div>
