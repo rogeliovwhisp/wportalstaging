@@ -12,13 +12,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
 </head>
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
         <div class="row flex-fill" style='min-height: 100vh'>
             <!-- left column -->
         <!-- left global sidebar -->
-        <div class="col-sm-2 h-100 leftSideBar">
+        <div class="col-sm-2 h-100 leftSideBar box">
             <div class="row h-100" style="background:#1b252f">
                 <div class="col-sm-12">
                     <div class="h-100  justify-content-middle py-4">
@@ -29,10 +31,10 @@
 
                             <div class="row leftNavigationWrap">
                               <ul class="leftNavigation">
-                                <li class="mb-1"><a href="dashboard.html" class="text-decoration-none"><i class="bi bi-grid"></i> &nbsp; Dashboard</a></li>
-                                <li class="mb-1"><a href="clients.html" class="text-decoration-none"><i class="bi bi-people"></i>&nbsp; Clients</a></li>
-                                <li class="mb-1"><a href="manageUsers.html" class="text-decoration-none"><i class="bi bi-person"></i>&nbsp; Manage Users</a></li>
-                                <li class="mb-1"><a href="accountsettings.html" class="text-decoration-none"><i class="bi bi-gear"></i>&nbsp; Settings</a></li>
+                                <li class="mb-1"><a href="dashboard.html" class="text-decoration-none"><i class="bi bi-grid"></i><span class="sb_text">&nbsp; Dashboard</span> </a></li>
+                                <li class="mb-1"><a href="clients.html" class="text-decoration-none"><i class="bi bi-people"></i><span class="sb_text">&nbsp; Clients</span></a></li>
+                                <li class="mb-1"><a href="manageUsers.html" class="text-decoration-none"><i class="bi bi-person"></i><span class="sb_text">&nbsp; Manage Users</span></a></li>
+                                <li class="mb-1"><a href="accountsettings.html" class="text-decoration-none"><i class="bi bi-gear"></i><span class="sb_text">&nbsp; Settings</span></a></li>
                               </ul>
                             </div>
 
@@ -41,14 +43,14 @@
                                 <div class="dropdown">
                                     <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                                    <p><span class="cname">John Doe</span><span class="ccposition">administrator</span></p>
+                                    <p><span class="cname sb_text">John Doe</span><span class="ccposition sb_text">administrator</span></p>
                                     </a>
                                     <ul class="dropdown-menu text-small shadow">
                                       <li><a class="userdrpinfo dropdown-item" href="#">Settings</a></li>
                                       <li><a class="userdrpinfo dropdown-item" href="#">Profile</a></li>
                                     </ul>
                                   </div>
-                                  <button class="outlogin"> <span>Logout</span>  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
+                                  <button class="outlogin"> <span class="sb_text">Logout</span>  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
                               </div>
                             </div>
 
@@ -68,7 +70,16 @@
                                     <!-- Right Top Header-->
                                     <div class="row rightTopHeader pt-3 pb-3">
                                         <div class="col-sm-5">
-                                            <h4 class='pt-2 px-4 font-weight-bold' style="font-family:'Outfit', sans-serif;">Create a Whisp</h4>
+                                            <div class='btnCollapse'>
+                                                <button type="button" class="slide-left">
+                                                  <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63bce117dc38d777aea051a8.png'/>
+                                                </button>
+                                                <button type="button" class="slide-right">
+                                                  <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63bce6ae29353d21300fb6fc.png' />
+                                                </button>
+                                              </div>
+
+                                            <h4 class='pt-2 px-4 font-weight-bold'>Create a Whisp</h4>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="input-group">
