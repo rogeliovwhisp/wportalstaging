@@ -1332,6 +1332,20 @@ background: #D5DDE5;
     height: 100% !important;
 }
 
+.btnCollapse {
+    position: absolute;
+    top: 65px;
+    margin-left: -27px;
+    background: #1b252f;
+    padding: 5px 5px 10px 3px;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.btnCollapse button {
+  background: transparent;
+  border: 0px;
+}
+
 /*End of Create a Whisp QR*/
 
 @media screen and (max-width: 1400px) and (min-width: 1300px){
