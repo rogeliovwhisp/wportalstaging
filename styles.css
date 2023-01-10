@@ -1328,6 +1328,10 @@ background: #D5DDE5;
   border-radius: 50px;
 }
 
+#myChartBar, #myChart {
+    height: 100% !important;
+}
+
 /*End of Create a Whisp QR*/
 
 @media screen and (max-width: 1400px) and (min-width: 1300px){
