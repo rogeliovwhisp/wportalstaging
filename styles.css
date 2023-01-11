@@ -134,6 +134,7 @@ label, p, a, button {
     width:100%;
     height: auto;
   }
+
 /*End of Dashboard Page*/
 
 /*clients page*/
@@ -845,6 +846,12 @@ background: #D5DDE5;
 }
 /*End of Global Text area element Color Scheme*/
 
+/*Global icon align center if it's collapse*/
+.icon_item{
+  padding-left: 20px !important;
+}
+/*End Global icon align center if it's collapse*/
+
 /*Create QR page*/
 .createqrpage .nav-pills .nav-link {
   font-size: 16px !important;
@@ -1358,6 +1365,10 @@ background: #D5DDE5;
     width: 349px;
     margin-left: 38px;
  
+  }
+
+  .linechart_warpper{
+    height: 330px !important;
   }
   
 }

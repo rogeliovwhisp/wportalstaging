@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
 </head>
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
@@ -28,10 +30,10 @@
 
                             <div class="row leftNavigationWrap">
                               <ul class="leftNavigation">
-                                <li class="mb-1"><a href="dashboard.html" class="text-decoration-none"><i class="bi bi-grid"></i> &nbsp; Dashboard</a></li>
-                                <li class="mb-1"><a href="clients.html" class="text-decoration-none"><i class="bi bi-people"></i>&nbsp; Clients</a></li>
-                                <li class="mb-1"><a href="manageUsers.html" class="text-decoration-none"><i class="bi bi-person"></i>&nbsp; Manage Users</a></li>
-                                <li class="mb-1 active"><a href="accountsettings.html" class="text-decoration-none"><i class="bi bi-gear"></i>  &nbsp;Settings</a></li>
+                                <li class="mb-1"><a href="dashboard.html" class="icon_item text-decoration-none"><i class="bi bi-grid"></i><span class="sb_text">&nbsp; Dashboard</span> </a></li>
+                                <li class="mb-1"><a href="clients.html" class="icon_item text-decoration-none"><i class="bi bi-people"></i><span class="sb_text">&nbsp; Clients</span></a></li>
+                                <li class="mb-1"><a href="manageUsers.html" class="icon_item text-decoration-none"><i class="bi bi-person"></i><span class="sb_text">&nbsp; Manage Users</span></a></li>
+                                <li class="mb-1 active"><a href="accountsettings.html" class="icon_item text-decoration-none"><i class="bi bi-gear"></i><span class="sb_text">&nbsp;Settings</span></a></li>
                               </ul>
                             </div>
 
@@ -40,14 +42,14 @@
                                 <div class="dropdown">
                                     <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639791f2427952b7354dd6b1.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                                    <p><span class="cname">John Doe</span><span class="ccposition">administrator</span></p>
+                                    <p><span class="cname sb_text">John Doe</span><span class="ccposition sb_text">administrator</span></p>
                                     </a>
                                     <ul class="dropdown-menu text-small shadow">
                                       <li><a class="userdrpinfo dropdown-item" href="#">Settings</a></li>
                                       <li><a class="userdrpinfo dropdown-item" href="#">Profile</a></li>
                                     </ul>
                                   </div>
-                                  <button class="outlogin"> <span>Logout</span>  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
+                                  <button class="outlogin"> <span class="sb_text">Logout</span>  &nbsp;<img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a5b44bad0ddc06fdea3854.svg+xml"></button>
                               </div>
                             </div>
 
@@ -59,7 +61,7 @@
         <!-- end left global side bar -->
 
             <!--Right Column-->
-            <div class="col-sm-10 h-100">
+            <div class="col-sm-10 h-100 leftMainWrap">
                 <div class="row h-100" style="background:#EEF2F6">
                     <div class="col-sm-12">
                         <div class="h-100 d-grid align-items-left justify-content-left">
@@ -67,25 +69,38 @@
                                 <div class=''>
                                     <div class="row" style="background: #FFFFFF;">
                                         <div class="col-sm-6 py-3 px-4">
-                                            <h3>Account Settings</h3>
+
+                                          <div class='btnCollapse'>
+                                            <button type="button" class="slide-left">
+                                              <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63bce117dc38d777aea051a8.png'/>
+                                            </button>
+                                            <button type="button" class="slide-right">
+                                              <img src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63bce6ae29353d21300fb6fc.png' />
+                                            </button>
+                                          </div>
+
+                                            <h4 class="pt-2 px-4 font-weight-bold">Account Settings</h4>
                                         </div>
                                         <div class="col-sm-3 py-3 px-4"></div>
-                                        <div class="col-sm-3 py-4">
+                                        <div class="col-sm-3 py-4 rightTopDate">
                                           <p id="todayis" class="h6 text-muted" style="border-left: #8F9CA9 solid 2px; padding-left: 20px;"></p>
                                         </div>
                                     </div>
                                     <!--Vertical Tab-->
+                                    
                                     <div class="d-flex align-items-start py-5">
+                                        <!--Menu tab selector-->
                                         <div class="nav flex-column nav-pills me-3 text-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                           <button class="account_settings nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" style="text-align: left; padding-left: 20px; padding-right: 40px; color: #1B252F;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a59f685aac1d0d80906f33.svg+xml">&nbsp; Basic information</button>
                                           <button class="account_settings nav-link " id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="text-align: left; padding-left: 20px; padding-right: 40px;color: #1B252F;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a59f68ad0ddc5509ea338c.svg+xml">&nbsp; Password</button>
                                           <button class="account_settings nav-link " id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" style="text-align: left; padding-left: 20px; padding-right: 40px; color: #1B252F;"><img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a59f68408c0b1344fd64b9.svg+xml">&nbsp; Delete account</button>
                                         </div>
+                                        <!--End of Menu tab selector-->
                                         <div class="tab-content px-4" id="v-pills-tabContent" style="width: 78%;">
                                           <!--Basic information-->
                                           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                                            <div class="vstack gap-3">
-                                                <div class="bg-white " style="border-radius: 15px;">
+                                            <div class="card" style="border: none;">
+                                                <div class="card-body" style="border-radius: 15px;">
                                                 <div class="row">
                                                     <div class="col-sm-12 py-4 px-5">
                                                         <h5>Basic information</h5>
@@ -179,10 +194,10 @@
                                                 </div>
                                               </div>
                                           </div>
-                                          <!--End of Basic Information-->
+                                          <!--End of Basic Information Tap-->
+                                          <!--Reset Password Tab-->
                                           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-
-                                            <div class="card" style="border: none; border-radius: 15px;">
+                                            <div class="card" style="border: none;">
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <div class="col-sm-12 py-4 px-5">
@@ -212,6 +227,9 @@
                                                 </div>
                                             </div>
                                           </div>
+                                          <!--End of Reset Password Tab-->
+
+                                          <!--Delete Account Tab-->
                                           <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
                                             <div class="vstack gap-3">
                                                 <div class="bg-white " style="border-radius: 15px;">
@@ -227,6 +245,7 @@
                                                 </div>
                                             </div>
                                           </div>
+                                          <!--Delete Account Tab-->
                                         </div>
                                       </div>
                                     <!--End Vertical Tab-->
