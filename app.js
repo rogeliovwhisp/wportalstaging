@@ -3,9 +3,9 @@
           var boxWidth = $(".box").width();
           $(".slide-right").hide();
           $(".rightLogo .logoCollapse").hide();
-          
 
           $(".slide-left").click(function(){
+              $(".slide-left").hide();
               $(".rightLogo .logo").hide();
               $(".leftSideBar").animate({
                   width: "5%"
@@ -16,16 +16,14 @@
               $(".leftMainWrap").animate({
                   width: "95%"
               });
-              $(".slide-left").hide();
+              
               $(".sb_text").hide();
-              $(".slide-right").show();
               $(".leftSideBar .fixed-bottom").css("margin-left","-10px");
               $(".leftSideBar .outlogin").css("margin-left","-12px");
               $(".rightLogo .logoCollapse").show();
               $(".leftSideBar .leftNavigation li a").css("text-align","center");
               $(".leftSideBar .leftNavigation .icon_item").css("padding-left","0px");
-
-              
+              $(".slide-right").show();
           });
 
           $(".slide-right").click(function(){

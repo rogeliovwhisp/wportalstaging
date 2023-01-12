@@ -1423,6 +1423,7 @@ background: #D5DDE5;
     background: #1b252f;
     padding: 5px 5px 10px 3px;
     border-radius: 0px 100px 100px 0px;
+    z-index: 1;
 }
 
 .btnCollapse button {
@@ -1430,12 +1431,18 @@ background: #D5DDE5;
   border: 0px;
 }
 
+.rightLogo {
+  z-index: 9;
+}
+
 .rightLogo .logo {
   width: 160px;
+  background: #1b252f;
+  z-index: 9;
 }
 
 .rightLogo .logoCollapse {
-  width: 100%;
+  width: 40px;
 }
 
 /*End of Create a Whisp QR*/
