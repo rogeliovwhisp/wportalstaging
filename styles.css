@@ -925,7 +925,7 @@ background: #D5DDE5;
 
 /*Global icon align center if it's collapse*/
 .icon_item{
-  padding-left: 20px !important;
+  padding-left: 20px;
 }
 /*End Global icon align center if it's collapse*/
 
@@ -1428,6 +1428,14 @@ background: #D5DDE5;
 .btnCollapse button {
   background: transparent;
   border: 0px;
+}
+
+.rightLogo .logo {
+  width: 160px;
+}
+
+.rightLogo .logoCollapse {
+  width: 100%;
 }
 
 /*End of Create a Whisp QR*/
