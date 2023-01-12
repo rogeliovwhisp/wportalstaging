@@ -261,6 +261,11 @@ button.btn.btn-dark.px-4{
 .clientsPageBtnCancel button{
   background: red !important;
 }
+
+.wheelwhisp{
+  text-align: center;
+}
+
 /*end of clients page*/
 
 
@@ -614,12 +619,6 @@ button.btn.btn-dark.px-4{
   padding: 0.375rem;
 }
 
-.colorselector{
-  display: flex;
-}
-.colorselector li{
-  list-style: none;
-}
 .addtrack {
 border-radius: 15px;
 border: #B8C1CC solid 2px;
@@ -666,13 +665,13 @@ padding: 10px 40px 10px 40px;
 
 /*Client Page Edit*/
 .clientsPageBtnCancel {
-  background: #ede6e6 !important;
-  color: #b4bfcc;
-  border: 0px;
+  border-radius: 10px;
+  outline-color: #adb9c7 !important;
   width: 110px;
   height: 40px;
-  border-radius: 10px;
-} 
+}
+
+
 
 .clientsPageBtnSave {
   background: #36414c !important;
@@ -928,6 +927,18 @@ background: #D5DDE5;
   padding-left: 20px;
 }
 /*End Global icon align center if it's collapse*/
+
+/*global remove label color*/
+.deletedata{
+  color: #d26a6a !important;
+}
+/*end of global remove label color */
+
+/*global color picker width size*/
+.pickcolor{
+  width: 7.1em !important;
+}
+/*End of global color picker width size*/
 
 /*Create QR page*/
 .createqrpage .nav-pills .nav-link {
@@ -1281,7 +1292,7 @@ background: #D5DDE5;
 
 /*End of Custom Dropdown*/
 
-/*login lef*/
+/*login left*/
 .loginLeft h5, .loginRight h5 {
   font-size: 30px;
 }
@@ -1401,7 +1412,6 @@ background: #D5DDE5;
     text-decoration: none;
     border: solid 1px #6a6464;
     width: 150px;
-    /* height: 50px; */
     display: block;
     border-radius: 50px;
     padding-top: 6px;
@@ -1453,11 +1463,11 @@ background: #D5DDE5;
     background-color: #36414C;
   }
 
-  .msgreply, .msg2ndreply{
+  /* .msgreply, .msg2ndreply{
     width: 349px;
     margin-left: 38px;
  
-  }
+  } */
 
   .linechart_warpper{
     height: 330px !important;
