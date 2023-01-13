@@ -670,6 +670,7 @@ padding: 10px 40px 10px 40px;
  opacity: 1;
 }
 
+
 /*End of Create Whisp Wheel*/
 
 
@@ -949,6 +950,12 @@ background: #D5DDE5;
   width: 7.1em !important;
 }
 /*End of global color picker width size*/
+
+/*Global size header-card text*/
+.form-label{
+  font-size: 15px !important;
+}
+/*End of Global size header-card text*/
 
 /*Create QR page*/
 .createqrpage .nav-pills .nav-link {

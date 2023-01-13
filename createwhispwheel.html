@@ -317,14 +317,12 @@
                                                     </div>
                                                 </div>
                                                 <!-- end sms -->
-
-
                                                 <!-- style -->
                                                 <div class="tab-pane fade" id="pills-style" role="tabpanel" aria-labelledby="pills-style-tab">
                                                     <div class="row">
                                                         <div class="col-sm-8">
-                                                            
-                                                            <div class="card" style="border-radius: 15px;">
+                                                            <form>
+                                                            <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
                                                                         <div class="pt-5 text-left center-block mb-5">
@@ -335,7 +333,7 @@
                                                                                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="http://">
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-sm-3">
+                                                                                <div class="col-sm-4">
                                                                                       <p>Page Placement</p>
                                                                                       <div class="form-group">
                                                                                         <select class="form-control" id="exampleFormControlSelect2">
@@ -347,59 +345,95 @@
                                                                                         </select>
                                                                                       </div>
                                                                                 </div>
-                                                                                <div class="col-sm-3">
+                                                                                <div class="col-sm-2">
                                                                                     <p>Font Size</p>
                                                                                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0px">
                                                                                 </div>
                                                                             </div>
-                                                                            <!--background color selection-->
                                                                             <div class="row pt-5">
                                                                                 <div class="col-sm-3">
-                                                                                    <label for="exampleColorInput" class="form-label">Background Color 1</label>
                                                                                     <div class="card">
-                                                                                        <div class="card-header">
-                                                                                          Color Picker
-                                                                                        </div>
-                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#7986CB" title="Choose your color"></div>
-                                                                                      </div>
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Background Color 1</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#d51d4c" title="Choose your color"></div>
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="col-sm-3">
-                                                                                    <label for="exampleColorInput" class="form-label">Background Color 2</label>
                                                                                     <div class="card">
-                                                                                        <div class="card-header">
-                                                                                            Color Picker
-                                                                                        </div>
-                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#4DD0E1" title="Choose your color"></div>
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Background Color 2</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#2a3b49" title="Choose your color"></div>
                                                                                     </div>
-                                                                                   
+                                                                                    
                                                                                 </div>
                                                                                 <div class="col-sm-3">
-                                                                                    <label for="backgroundColor3" class="form-label">Background Color 3</label>
                                                                                     <div class="card">
-                                                                                        <div class="card-header">
-                                                                                            Color Picker
-                                                                                          </div>
-                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#4CAF50" title="Choose your color"></div>
-                                                                                        </div>
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Background Color 3</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#b8c1cc" title="Choose your color"></div>
                                                                                     </div>
+                                                                                </div>
                                                                                 
                                                                             </div>
-                                                                        </div> 
-                                                                            
-                                                                             
-                                                                            <!--End of Three Fields color selection-->                                                      
+                                                                            <div class="row pt-5">
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Font Color 1</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#4ac500" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Font Color 2</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#b07a2d" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Font Color 3</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#0096da" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <div class="row pt-5">
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Overlay Background</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#7430fa" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Overlay Text <br>&nbsp;</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#ffffff" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Submit Button Text Color</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#cbd5df" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-3">
+                                                                                    <div class="card">
+                                                                                        <div class="card-header"><label for="exampleColorInput" class="form-label">Submit Button Background</label></div>
+                                                                                        <div class="card-body"><input type="color" class="pickcolor form-control form-control-color" id="exampleColorInput" value="#141c23" title="Choose your color"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </div>                                                             
                                                                         </div>  
                                                                     </form>
                                                                 </div>
-                                                            </div>
+                                                            </div></form>
                                                         </div>
                                                         <div class="col-sm-4">
-                                                          <div class="card" style="border-radius: 15px;">
+                                                          <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
                                                                         <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a4b6b15aac1d8825900d05.svg+xml" width="">
                                                                         <h5 class="card-title">Wheel</h5>
-                                                                        <p class="card-text" style="color: #B8C1CC;">Best for print media, web pages & Social Media</p>                                                         
+                                                                        <p class="card-text" style="color: #B8C1CC;">Best for print media, web pages & Social Media</p>                                                       
                                                                     </div>  
                                                                 </div>
                                                             </div>
@@ -874,7 +908,7 @@
                                                                 <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a22a33c53410ceffefa85d.svg+xml"/>
                                                             </div>
                                                             <div class="col-sm-8 px-5">
-                                                                <h5><a style="text-decoration: none; color: #1b252f;" href="createfloater.html">Floater</a></h5>
+                                                                <h5><a style="text-decoration: none; color: #1b252f;" href="createwhisp.html">Floater</a></h5>
                                                                 <p style="color: #B8C1CC;">Best website for web pages, Social Media sites</p>
                                                             </div>
                                                         </div>
@@ -883,7 +917,7 @@
                                                                 <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a306fc64cc558e9c5e03bd.svg+xml"/>
                                                             </div>
                                                             <div class="col-sm-8 px-5">
-                                                                <h5><a style="text-decoration: none; color: #1b252f;" href="createwhispwheel.html">Wheel</a></h5>
+                                                                <h5><a style="text-decoration: none; color: #1b252f;" href="createwhisp.html">Wheel</a></h5>
                                                                 <p style="color: #B8C1CC;">Best for website, Home Pages</p>
                                                             </div>
                                                         </div>
@@ -892,7 +926,7 @@
                                                                 <img src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a30852c534104e79f013ca.svg+xml"/>
                                                             </div>
                                                             <div class="col-sm-8 px-5">
-                                                                <h5><a style="text-decoration: none; color: #1b252f;" href="createwhispqr.html">QR Code</a></h5>
+                                                                <h5><a style="text-decoration: none; color: #1b252f;" href="createwhisp.html">QR Code</a></h5>
                                                                 <p style="color: #B8C1CC;">Best  for print media, web pages Social Media</p>
                                                             </div>
                                                         </div>
