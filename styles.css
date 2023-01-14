@@ -8,6 +8,16 @@ body{
 label, p, a, button {
   font-family: 'Outfit', sans-serif;
 }
+
+/*dashboard*/
+  .db_left {
+    width: 5%;
+  }
+  .db_right {
+    width: 95%;
+  }
+/**/
+
 /*Left global side bar*/
     .leftNavigationWrap .bi-person::before {
       font-size: 18px;
