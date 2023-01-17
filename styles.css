@@ -1609,7 +1609,7 @@ background: #D5DDE5;
   .main_editclients .rightTopHeader .col-sm-5,
   .main_editclients .rightTopHeader .col-sm-4,
   .main_manageusers .rightTopHeader .col-sm-5,
-  .main_manageusers .rightTopHeader .col-sm-4 {
+  .main_manageusers .rightTopHeader .col-sm-4{
     width: 30%;
   }
   .main_editclients .rightTopHeader .col-sm-5 {
@@ -1692,6 +1692,30 @@ background: #D5DDE5;
   .main_settings .col-form-label {
     font-size: 14px !important;
   }
+
+  .main_clientprofile .leftSideBar {
+    width: 20%;
+  }
+
+  .main_clientprofile .rightTopHeader {
+    width: 100%;
+  }
+
+  .main_clientprofile .rightTopHeader .col-sm-5 {
+    width: 24.666667%;
+  }
+
+  .main_clientprofile .rightTopHeader .col-sm-3 {
+    width: 37%;
+  }
+ .main_clientprofile .hstack {
+  flex-wrap: wrap;
+ }
+
+ .main_clientprofile .leftMainWrap{
+  width: 80%;
+ }
+
 }
 
 /*End Tablet*/
