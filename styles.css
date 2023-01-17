@@ -1561,7 +1561,7 @@ background: #D5DDE5;
   }
 
   .main_clients .list-wrapper .clients_wrap_tbl{
-    padding: 1em !important;
+    padding: .8em !important;
   }
 
   .main_clients .clientsPageSelect .selectAll {
@@ -1573,8 +1573,203 @@ background: #D5DDE5;
   }
   .main_clients .form-check .col-sm-1,
   .main_clients .form-check .col-sm-2 {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 0px !important;
+  }
+  .main_clients .clientsPageBg .plusNewClient {
+    margin-right: 0px;
+    padding:0px !important;
+  }
+  .main_clients .clientsPageBg button {
+    padding: 0px 5px;
+  }
+  .main_clients .clientsPageSelect {
+    height: 27px;
+    padding: 5px 7px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .main_clients .form-check-input[type=checkbox] {
+    margin-top: 7px;
+  }
+  .main_clients .selectAll {
+    padding-right: 10px !important;
+    padding-top:4px !important;
+  }
+  .main_clients .clientsPageBg .clientLeadsRsult {
+    font-size: 12px;
+  }
+  .main_clients .clientsPageBg .cAname {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    margin-right: 20px;
+  }
+  .main_editclients .rightTopHeader .col-sm-5,
+  .main_editclients .rightTopHeader .col-sm-4,
+  .main_manageusers .rightTopHeader .col-sm-5,
+  .main_manageusers .rightTopHeader .col-sm-4 {
+    width: 30%;
+  }
+  .main_editclients .rightTopHeader .col-sm-5 {
+    padding-top: 10px;
+  }
+  .main_editclients .rightTopHeader .col-sm-3,
+  .main_manageusers .rightTopHeader .col-sm-3 {
+    width: 40%;
+  }
+  .main_editclients .clientsPageBgEdit .container {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+  .main_editclients .clientsPageBgEdit .container .card {
+    padding: 0px !important;
+  }
+  .main_editclients .clientsPageBgEdit .container .card .pt-5 {
+    padding-top: 1em !important;
+  }
+  .main_editclients .clientsPageBgEdit .container .col-sm-4,
+  .main_editclients .clientsPageBgEdit .container .col-sm-12 {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+  .main_editclients .clientsPageBgEdit .container .col-sm-6 {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+  .main_editclients .clientsPageBgEdit .container .pt-5:nth-child(5) .col-sm-6 {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+  .main_manageusers .MU_PageBg {
+    padding: 0px 0px 10px 0px;
+  }
+  .main_manageusers .MU_PageBg .list-wrapper .col-sm-2{
+    width: 30% !important;
+  }
+  .main_manageusers .MU_PageBg .list-wrapper .col-sm-8 {
+    width: 40% !important;
+  }
+  .main_manageusers .px-4 {
+    padding-right: 0px !important;
+  }
+  .main_manageusers .MU_PageBg .mu_tbl .col-sm-2  {
+    width: 20% !important;
+  }
+  .main_manageusers .MU_PageBg  .mu_tbl .col-sm-6  {
+    width: 40% !important;
+  }
+  .main_settings .rightTopHeader .col-sm-3 {
+    display: none;
+  }
+  .main_settings .rightTopHeader .col-sm-6 {
+    width: 50% !important;
+  }
+  .main_settings .rightTopHeader .rightTopDate {
+    display: block;
+    width: 50% !important;
+  }
+  .main_settings .align-items-start .nav {
+    width: 30% !important;
+  }
+  .main_settings .align-items-start .tab-content {
+    width: 70% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .main_settings .align-items-start .tab-content .col-sm-12,
+  .main_settings .align-items-start .tab-content .col-sm-8 {
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+  }
+  .main_settings .saveaccount {
+    width: 160px !important;
+    text-align: center;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .main_settings .col-form-label {
+    font-size: 14px !important;
   }
 }
 
 /*End Tablet*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
