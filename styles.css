@@ -1852,6 +1852,15 @@ background: #D5DDE5;
   width: 50% !important;
   padding-top: 20px;
  }
+ .main_createwhisp .col-sm-6 {
+  width: 100% !important;
+ }
+ .main_createwhisp .col-sm-7 {
+  width: 40% !important;
+ }
+ .main_createwhisp .col-sm-3 {
+  width: 35% !important;
+ }
 }
 
 /*End Tablet*/
