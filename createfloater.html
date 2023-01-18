@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
     <title>Floater Creation | Portal</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Select Element Support Libraries--> 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
- <!-- Select Element Support Libraries--> 
- <script src="app.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/637dc96427d2b357066ca661.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Select Element Support Libraries--> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Select Element Support Libraries--> 
+    <script src="app.js"></script>
 </head>
 <body>
     <div id="menu_screen" class="container-fluid d-flex">
-        <div class="row flex-fill" style='min-height: 100vh'>
+        <div class="row flex-fill main_createfloater" style='min-height: 100vh'>
         <!-- left column -->
 
         <!-- left global sidebar -->
@@ -109,9 +109,8 @@
                                     </div>
                                  </div>
                                  <!-- End Right Top Header-->
-
-                                    <!--start menu selector-->
-                                    <div class="row text-center py-3 px-4 mt-3">
+                                 <!--start menu selector-->
+                                    <div class="row text-center py-3 px-4 mt-3 tabmenu">
                                       <div class="h-100 d-inline-flex">
                                         <div class="col-sm-7">
                                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -134,7 +133,6 @@
                                                 <button class="nav-link text-info" id="pills-code-tab" data-bs-toggle="pill" data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code" aria-selected="false"><i class="bi bi-code-slash"></i>&nbsp;Code</button>
                                               </li>
                                             </ul>
-
                                         </div>
                                         <div class="col-sm-5">
                                             <div class="d-grid gap-4 d-md-flex justify-content-md-end">
@@ -147,14 +145,13 @@
                                     </div>
                                     <!--End menu Selector-->
                                     <!--Start body content tab-->
-                                    <div class="">
+                                    <div class="main_body">
                                         <div class="row px-4">                                            
                                             <div class="tab-content" id="pills-tabContent">
-
                                                 <!--info tab-->
                                                 <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-8">
+                                                        <div class="col-sm-8 leftcard">
                                                             <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body px-5 py-5">
                                                                     <form class="row g-3 needs-validation" novalidate>
@@ -201,8 +198,8 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
-                                                          <div class="card border-0" style="border-radius: 15px;">
+                                                        <div class="col-sm-4 rightcard">
+                                                            <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
                                                                         <img class="mb-3" src="https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/639d38a38c315ce611354a41.png" width="">
@@ -219,8 +216,8 @@
                                                 <!-- SMS -->
                                                 <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-8">
-                                                          <div class=" py-3 p-2" style="background: #FFFFFF; border-radius: 15px;">
+                                                        <div class="col-sm-8 leftcard">
+                                                          <div class=" py-3 p-2 wrapsms" style="background: #FFFFFF; border-radius: 15px;">
                                                             <div class="row py-3 px-4">
                                                                 <div class="col-sm-8">
                                                                     <div class="card" style="border-radius: 15px; ">
@@ -255,16 +252,12 @@
                                                                             <p style="color: #ADB9C7;font-size: 11px;">Upload a picture <br> PNG, JPG</p>
                                                                             <button type="submit" class="cf_browse btn btn-outline-secondary mt-3 rounded-5">Browse</button>
                                                                         </div>
-                                                                    </div>                                                                    
+                                                                    </div>                                            
                                                                 </div>
-                                                                
                                                             </div>
-                                                            
-                                                           
                                                           </div>
-                                                            
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-4 rightcard">
                                                           <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -282,8 +275,8 @@
 
                                                 <!-- style -->
                                                 <div class="tab-pane fade" id="pills-style" role="tabpanel" aria-labelledby="pills-style-tab">
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
+                                                    <div class="row wrapstyle">
+                                                        <div class="col-sm-8 leftcard">
                                                             <form>
                                                             <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
@@ -345,7 +338,7 @@
                                                                 </div>
                                                             </div></form>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-4 rightcard">
                                                           <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -362,8 +355,8 @@
 
                                                 <!-- track -->
                                                 <div class="tab-pane fade" id="pills-track" role="tabpanel" aria-labelledby="pills-track-tab">
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
+                                                    <div class="row wraptrack">
+                                                        <div class="col-sm-8 leftcard">
                                                             <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
@@ -403,7 +396,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-4 rightcard">
                                                           <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -420,10 +413,10 @@
 
                                                 <!-- integrate -->
                                                 <div class="tab-pane fade" id="pills-integrate" role="tabpanel" aria-labelledby="pills-integrate-tab">
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
+                                                    <div class="row wrapintegrate">
+                                                        <div class="col-sm-8 leftcard">
                                                             <div class="card border-0" style="border-radius: 15px;">
-                                                                <div class="card-body">
+                                                                <div class="card-body titlebody">
                                                                     <form class="row g-3 needs-validation" novalidate>
                                                                         <div class="px-4 pt-3 center-block">
                                                                             <p class="text-secondary h6">Select Integration</p>                                                          
@@ -584,7 +577,7 @@
                                                                 <!--End Affiliate integration-->
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-4 rightcard">
                                                           <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
@@ -706,11 +699,11 @@
                                                 <!-- code -->
                                                 <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
                                                     <div class="row">
-                                                        <div class="col-sm-8">
+                                                        <div class="col-sm-8 leftcard">
                                                             <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <form class="row g-3 needs-validation" novalidate>
-                                                                        <div class="pt-3 px-5 mb-5">
+                                                                        <div class="pt-3 px-5 mb-5 leftcode">
                                                                             <div class="row">
                                                                                 <div class="col-sm-2">Code 
                                                                                       <img  width='20' data-bs-placement="right"  data-bs-html="true" data-bs-toggle="tooltip" title="<br>STEPS<br>1. Copy the code <br>2. Paste it in your application <br>3. Refresh the page<br><br>OR<br>1. Download available plugin<br>2. Install it in your framework<br>(e.g wordpress).<br><br>" src='https://storage.googleapis.com/msgsndr/Xped5c2jrqgZhhg67y1J/media/63a29a37d2454b9c2a2647a8.png' />
@@ -809,7 +802,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-4 rightcard">
                                                           <div class="card border-0" style="border-radius: 15px;">
                                                                 <div class="card-body">
                                                                     <div class="pt-5 text-center center-block mb-5">
