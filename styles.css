@@ -396,11 +396,6 @@ button.btn.btn-dark.px-4{
   opacity: 1;
 }
 
-/* #menu_screen > div > div.col-sm-10.h-100 > div > div > div > div > div > div.col-md-4 > button {
-  margin-top: 20px;
-  font-weight: 100 !important;
-} */
-
 .accntbtnsetting{
   background-color: #36414c !important;
   width: 110px;
@@ -524,8 +519,6 @@ button.btn.btn-dark.px-4{
 .MU_PageBg .mUsersEdit a:hover {
   text-decoration: underline;
 }
-
-
 
 .importuser{
   border-radius: 15px !important;
@@ -682,8 +675,6 @@ padding: 10px 40px 10px 40px;
   height: 40px;
 }
 
-
-
 .clientsPageBtnSave {
   background: #36414c !important;
   border: 0px;
@@ -748,7 +739,6 @@ height: 40px;
 .selectcamp{
   width: 272px;
 }
-
 
 
 /*circular progress*/
@@ -1301,7 +1291,6 @@ background: #D5DDE5;
   }
 }
 
-
 .selectMultiple {
   margin-top: 5px;
   margin-bottom: 27px;
@@ -1852,6 +1841,66 @@ background: #D5DDE5;
   width: 50% !important;
   padding-top: 20px;
  }
+
+ .main_whispWheel .h-100,
+ .main_whispqr .h-100 {
+  display: inline-block !important;
+ }
+
+ .main_whispWheel .h-100 .submenu_whispwheel .col-sm-7,
+ .main_whispWheel .h-100 .submenu_whispwheel .col-sm-5,
+ .main_whispqr .h-100 .submenu_whispqr .col-sm-7, 
+ .main_whispqr .h-100 .submenu_whispqr .col-sm-5 {
+  width: 100%;
+ }
+
+ .main_whispWheel .rightTopHeader .col-sm-3,
+ .main_whispqr .rightTopHeader .col-sm-3 {
+  width: 32%;
+ }
+
+ .main_whispWheel .rightTopHeader .col-sm-7,
+ .main_whispqr .rightTopHeader .col-sm-7 {
+  width: 36%;
+ }
+
+ .main_whispWheel .imgwheel,
+ .main_whispqr .imgqr {
+  width: 90%;
+ } 
+
+ .main_whispWheel .colorcontent{
+  display: block;
+ }
+
+ .main_whispWheel .colorcontent .col-sm-3{
+  width: 100%;
+  margin-bottom: 30px;
+ }
+
+ .main_whispWheel .cw_btn,
+ .main_whispqr .cf_btn {
+  width: 92px;
+  height: 38px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 9px;
+ }
+
+ .main_whispWheel .cw_browse,
+ .main_whispqr .cf_browse {
+  padding: 7px 20px 7px 20px;
+  margin-left: -15px !important;
+ }
+
+ .row .integrate .col-sm-3{
+  width: 45%;
+ }
+
+ .code .col-sm-11{
+  width: 81%;
+ }
+
 }
 
 /*End Tablet*/
