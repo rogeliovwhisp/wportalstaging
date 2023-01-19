@@ -78,8 +78,3 @@
       });
 // End of Global Left Navigator full screen sidebar Collapsible function//
 
-//Global  Select Element Search function//
-$(function(){
-    $("#clients").select2();
-});
-//End of Global Select Element Search function//
